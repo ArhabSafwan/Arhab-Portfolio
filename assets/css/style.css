@@ -471,8 +471,65 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Expertise
+--------------------------------------------------------------*/
+.expertise {
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+
+.expertise .section-title {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.expertise .section-title h2 {
+  font-size: 32px;
+  color: #333;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.expertise h4 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.expertise p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.expertise ul {
+  list-style: none;
+  padding: 0;
+}
+
+.expertise ul li {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.expertise ul li::before {
+  content: "\f00c";
+  font-family: FontAwesome;
+  position: absolute;
+  left: 0;
+  color: #025959;
+}
+
+/*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.portfolio{
+  background-color: #f0f3f4;
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -657,6 +714,55 @@ section {
   margin-left: 80px;
   line-height: 24px;
   font-size: 14px;
+}
+
+/*--------------------------------------------------------------
+# Projects
+--------------------------------------------------------------*/
+
+.projects {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.projects .section-title {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.projects .section-title h2 {
+  font-size: 32px;
+  color: #333;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.projects .project-item {
+  background: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.projects .project-item:hover {
+  transform: translateY(-10px);
+}
+
+.projects .project-item h4 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.projects .project-item p {
+  font-size: 14px;
+  color: #777;
+}
+
+.projects .project-item p strong {
+  color: #555;
 }
 
 /*--------------------------------------------------------------
