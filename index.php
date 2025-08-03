@@ -206,7 +206,17 @@
 
     </section> <!-- end s-about -->
 
-
+    <style>
+        .service-item__icon i {
+            font-size: 10rem;
+            color: #eabe7b;
+        }
+        .service-item__text:hover h3 {
+            color: #d9a452;
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+        }
+    </style>
     <!-- ### services
             ================================================== -->
     <section id="services" class="s-services target-section">
