@@ -18,6 +18,8 @@
     ================================================== -->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
     <!-- favicons
     ================================================== -->
@@ -67,6 +69,7 @@
                         <li><a href="index.php" class="home-link">Arhab Safwan.</a></li>
                         <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
                         <li><a href="#about" class="smoothscroll">About</a></li>
+                        <li><a href="#services" class="smoothscroll">Services</a></li>
                         <li><a href="#works" class="smoothscroll">Works</a></li>
                         <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
                     </ul>

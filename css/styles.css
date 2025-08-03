@@ -1,76 +1,4 @@
-﻿/* =================================================================== 
- * TOC:
- *
- * # SETTINGS
- *      ## fonts 
- *      ## colors
- *      ## spacing and typescale
- *      ## grid variables
- * # NORMALIZE
- * # BASE SETUP
- * # GRID
- *      ## large screen devices 
- *      ## medium screen devices 
- *      ## tablet devices 
- *      ## mobile devices 
- *      ## small screen devices 
- *      ## additional column stackpoints 
- * # UTILITY CLASSES
- * # TYPOGRAPHY 
- *      ## base type styles
- *      ## additional typography & helper classes
- *      ## lists
- *      ## spacing
- * # PRELOADER
- * # FORM
- *      ## style placeholder text
- *      ## change autocomplete styles in Chrome
- * # BUTTONS
- * # TABLE
- * # COMPONENTS
- *      ## pagination
- *      ## alert box 
- *      ## skillbars 
- *      ## stats tabs
- * # PROJECT-WIDE SHARED STYLES
- *      ## media classes
- *      ## theme-specific typography classes
- *      ## MailtoUI style overrides
- * # PAGE WRAP
- *      ## circles
- * # SITE HEADER
- *      ## main navigation
- *      ## mobile menu toggle
- * # INTRO
- *      ## intro social
- *      ## intro scrolldown
- * # ABOUT
- *      ## about info
- *      ## about expertise
- *      ## about timelines
- * # WORKS
- *      ## works portfolio
- *      ## modal popup
- *      ## testimonials
- *      ## testimonial slider 
- * # CONTACT
- * # FOOTER
- *      ## copyright
- *      ## go top
- *
- * ------------------------------------------------------------------ */
-
-
-/* ===================================================================
- * # SETTINGS
- *
- *
- * ------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------- 
- * ## fonts 
- * ------------------------------------------------------------------- */
-@import url("../../css2");
+﻿@import url("../../css2");
 
 :root {
 
@@ -3571,6 +3499,23 @@ img.u-pull-left {
     }
 }
 
+/* ===================================================================
+ * # Services
+ *
+ *
+ * ------------------------------------------------------------------- */
+
+.s-services {
+    padding-top: var(--vspace-5);
+    padding-bottom: var(--vspace-3_5);
+}
+
+.s-services .h1 {
+    margin-top: 0;
+}
+.services-list {
+    margin-top: var(--vspace-4);
+}
 
 
 /* ===================================================================

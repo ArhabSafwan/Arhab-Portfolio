@@ -207,6 +207,91 @@
     </section> <!-- end s-about -->
 
 
+    <!-- ### services
+            ================================================== -->
+    <section id="services" class="s-services target-section">
+
+        <div class="row services-content wide">
+
+            <div class="column lg-12" data-animate-block>
+                <h2 class="text-pretitle" data-animate-el>What I Offer</h2>
+                <p class="h1" data-animate-el="">Here are some of the services I offer to help you with your projects.</p>
+
+                <div class="row block-lg-one-third block-md-one-half block-stack-on-700 services-list">
+                    <div class="column" data-animate-el>
+                        <div class="service-item">
+                            <div class="service-item__icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="service-item__text">
+                                <h3>Web Development</h3>
+                                <p>From single-page applications to large-scale enterprise systems, I build robust and scalable web solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column" data-animate-el>
+                        <div class="service-item">
+                            <div class="service-item__icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="service-item__text">
+                                <h3>Responsive Design</h3>
+                                <p>I create websites that look great on all devices, ensuring a seamless user experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column" data-animate-el>
+                        <div class="service-item">
+                            <div class="service-item__icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="service-item__text">
+                                <h3>Backend Development</h3>
+                                <p>I design and build powerful APIs and backend systems to drive your applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column" data-animate-el>
+                        <div class="service-item">
+                            <div class="service-item__icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <div class="service-item__text">
+                                <h3>Cloud & DevOps</h3>
+                                <p>I can help you deploy and manage your applications in the cloud with CI/CD pipelines.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column" data-animate-el>
+                        <div class="service-item">
+                            <div class="service-item__icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="service-item__text">
+                                <h3>AI Integration</h3>
+                                <p>I can integrate AI-powered features into your applications to make them smarter.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column" data-animate-el>
+                        <div class="service-item">
+                            <div class="service-item__icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="service-item__text">
+                                <h3>Database Design</h3>
+                                <p>I design and optimize database schemas for performance, scalability, and data integrity.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
     <!-- ### works
             ================================================== -->
     <section id="works" class="s-works target-section">
