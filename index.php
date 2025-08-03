@@ -228,7 +228,7 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-01">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/fuji.jpg" srcset="images/portfolio/fuji.jpg 1x, images/portfolio/fuji%402x.jpg 2x" alt="">
+                                <img src="images/portfolio/portfolio-15.png" srcset="images/portfolio/portfolio-15.png 1x, images/portfolio/portfolio-15%402x.jpg 2x" alt="">
                             </div>
 
                             <div class="folio-list__item-text">
@@ -250,7 +250,7 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-02">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/lamp.jpg" srcset="images/portfolio/lamp.jpg 1x, images/portfolio/lamp%402x.jpg 2x" alt="">
+                                <img src="images/portfolio/portfolio-14.png" srcset="images/portfolio/portfolio-14.png 1x, images/portfolio/portfolio-14%402x.jpg 2x" alt="">
                             </div>
 
                             <div class="folio-list__item-text">
@@ -272,7 +272,7 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-03">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/rucksack.jpg" srcset="images/portfolio/rucksack.jpg 1x, images/portfolio/rucksack%402x.jpg 2x" alt="">
+                                <img src="images/portfolio/portfolio-16.png" srcset="images/portfolio/portfolio-16.png 1x, images/portfolio/portfolio-16%402x.jpg 2x" alt="">
                             </div>
 
                             <div class="folio-list__item-text">
@@ -294,7 +294,7 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-04">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/skaterboy.jpg" srcset="images/portfolio/skaterboy.jpg 1x, images/portfolio/skaterboy%402x.jpg 2x" alt="">
+                                <img src="images/portfolio/portfolio-13.png" srcset="images/portfolio/portfolio-13.png 1x, images/portfolio/portfolio-13%402x.jpg 2x" alt="">
                             </div>
 
                             <div class="folio-list__item-text">
@@ -316,7 +316,7 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-05">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/sanddunes.jpg" srcset="images/portfolio/sanddunes.jpg 1x, images/portfolio/sanddunes%402x.jpg 2x" alt="">
+                                <img src="images/portfolio/portfolio-17.png" srcset="images/portfolio/portfolio-17.png 1x, images/portfolio/portfolio-17%402x.jpg 2x" alt="">
                             </div>
 
                             <div class="folio-list__item-text">
@@ -338,7 +338,49 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-06">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/minimalismo.jpg" srcset="images/portfolio/minimalismo.jpg 1x, images/portfolio/minimalismo%402x.jpg 2x" alt="">
+                                <img src="images/portfolio/portfolio-5.png" srcset="images/portfolio/portfolio-5.png 1x, images/portfolio/portfolio-5%402x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="folio-list__item-text">
+                                <div class="folio-list__item-cat">
+                                    Branding
+                                </div>
+                                <div class="folio-list__item-title">
+                                    Minimalismo.
+                                </div>
+                            </div>
+                        </a>
+                        <a class="folio-list__proj-link" href="#" title="project link">
+                            <svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </li> <!--end folio-list__item -->
+                    <li class="folio-list__item column" data-animate-el="">
+                        <a class="folio-list__item-link" href="#modal-07">
+                            <div class="folio-list__item-pic">
+                                <img src="images/portfolio/portfolio-12.png" srcset="images/portfolio/portfolio-12.png 1x, images/portfolio/portfolio-12%402x.jpg 2x" alt="">
+                            </div>
+
+                            <div class="folio-list__item-text">
+                                <div class="folio-list__item-cat">
+                                    Branding
+                                </div>
+                                <div class="folio-list__item-title">
+                                    Minimalismo.
+                                </div>
+                            </div>
+                        </a>
+                        <a class="folio-list__proj-link" href="#" title="project link">
+                            <svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </li> <!--end folio-list__item -->
+                    <li class="folio-list__item column" data-animate-el="">
+                        <a class="folio-list__item-link" href="#modal-08">
+                            <div class="folio-list__item-pic">
+                                <img src="images/portfolio/portfolio-18.png" srcset="images/portfolio/portfolio-18.png 1x, images/portfolio/portfolio-18%402x.jpg 2x" alt="">
                             </div>
 
                             <div class="folio-list__item-text">
@@ -366,7 +408,7 @@
                     -------------------------------------------- -->
             <div id="modal-01" hidden="">
                 <div class="modal-popup">
-                    <img src="images/portfolio/gallery/g-fuji.jpg" alt="">
+                    <img src="images/portfolio/gallery/g-portfolio-15.png" alt="">
 
                     <div class="modal-popup__desc">
                         <h5>Retro Camera</h5>
@@ -377,13 +419,13 @@
                         </ul>
                     </div>
 
-                    <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                    <a href="https://innovation.brac.net/fif2025/" target="_blank" class="modal-popup__details">Project link</a>
                 </div>
             </div> <!-- end modal -->
 
             <div id="modal-02" hidden="">
                 <div class="modal-popup">
-                    <img src="images/portfolio/gallery/g-lamp.jpg" alt="">
+                    <img src="images/portfolio/gallery/g-portfolio-14.png" alt="">
 
                     <div class="modal-popup__desc">
                         <h5>The White Lamp</h5>
@@ -393,13 +435,13 @@
                         </ul>
                     </div>
 
-                    <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                    <a href="https://bdwashdata.com/" class="modal-popup__details">Project link</a>
                 </div>
             </div> <!-- end modal -->
 
             <div id="modal-03" hidden="">
                 <div class="modal-popup">
-                    <img src="images/portfolio/gallery/g-rucksack.jpg" alt="">
+                    <img src="images/portfolio/gallery/g-portfolio-16.png" alt="">
 
                     <div class="modal-popup__desc">
                         <h5>Rucksuck</h5>
@@ -409,13 +451,13 @@
                         </ul>
                     </div>
 
-                    <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                    <a href="https://otithi.brac.net/" class="modal-popup__details">Project link</a>
                 </div>
             </div> <!-- end modal -->
 
             <div id="modal-04" hidden="">
                 <div class="modal-popup">
-                    <img src="images/portfolio/gallery/g-skaterboy.jpg" alt="">
+                    <img src="images/portfolio/gallery/g-portfolio-13.png" alt="">
 
                     <div class="modal-popup__desc">
                         <h5>Since Day One</h5>
@@ -425,14 +467,14 @@
                         </ul>
                     </div>
 
-                    <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                    <a href="https://bdwashdata.com/wash_admin" class="modal-popup__details">Project link</a>
                 </div>
             </div> <!-- end modal -->
 
             <div id="modal-05" hidden="">
                 <div class="modal-popup">
 
-                    <img src="images/portfolio/gallery/g-sanddunes.jpg" alt="">
+                    <img src="images/portfolio/gallery/g-portfolio-17.png" alt="">
 
                     <div class="modal-popup__desc">
                         <h5>Sand Dunes</h5>
@@ -442,13 +484,13 @@
                         </ul>
                     </div>
 
-                    <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                    <a href="https://labschool.auw.edu.bd/" class="modal-popup__details">Project link</a>
                 </div>
             </div> <!-- end modal -->
 
             <div id="modal-06" hidden="">
                 <div class="modal-popup">
-                    <img src="images/portfolio/gallery/g-minimalismo.jpg" alt="">
+                    <img src="images/portfolio/gallery/g-portfolio-5.png" alt="">
 
                     <div class="modal-popup__desc">
                         <h5>Minimalismo</h5>
@@ -459,7 +501,39 @@
                         </ul>
                     </div>
 
-                    <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                    <a href="https://webloomst.net/" class="modal-popup__details">Project link</a>
+                </div>
+            </div> <!-- end modal -->
+            <div id="modal-07" hidden="">
+                <div class="modal-popup">
+                    <img src="images/portfolio/gallery/g-portfolio-12.png" alt="">
+
+                    <div class="modal-popup__desc">
+                        <h5>Minimalismo</h5>
+                        <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia cupiditate voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>
+                        <ul class="modal-popup__cat">
+                            <li>Branding</li>
+                            <li>Product Design</li>
+                        </ul>
+                    </div>
+
+                    <a href="https://migrationmis.brac.net/" class="modal-popup__details">Project link</a>
+                </div>
+            </div> <!-- end modal -->
+            <div id="modal-08" hidden="">
+                <div class="modal-popup">
+                    <img src="images/portfolio/gallery/g-portfolio-18.png" alt="">
+
+                    <div class="modal-popup__desc">
+                        <h5>Minimalismo</h5>
+                        <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia cupiditate voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>
+                        <ul class="modal-popup__cat">
+                            <li>Branding</li>
+                            <li>Product Design</li>
+                        </ul>
+                    </div>
+
+                    <a href="https://labmis.auw.edu.bd/" class="modal-popup__details">Project link</a>
                 </div>
             </div> <!-- end modal -->
 
