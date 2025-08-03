@@ -220,7 +220,7 @@
                     Recent Works
                 </h2>
                 <p class="h1" data-animate-el="">
-                    Here are some of my favorite projects I have done lately. Feel free to check them out.
+                    Here are a few recent projects I've really enjoyed working on—take a look!
                 </p>
 
                 <ul class="folio-list row block-lg-one-half block-stack-on-1000">
@@ -564,9 +564,7 @@
                 </h2>
 
                 <p class="h1">
-                    I love to hear from you.
-                    Whether you have a question or just
-                    want to chat about design, tech & art — shoot me a message.
+                    I’d love to hear from you! Whether you have a question or just want to talk about design, tech, or business — feel free to drop me a message.
                 </p>
             </div>
         </div> <!-- end contact-top -->
