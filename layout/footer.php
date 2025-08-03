@@ -5,7 +5,6 @@
             <div class="row">
                 <div class="column ss-copyright">
                     <span>© Copyright Arhab Safwan 2025</span> 
-                    <span>Design by <a href="https://www.styleshout.com/">StyleShout</a> Distribution By <a href="https://themewagon.com">Themewagon</a></span>
                 </div>
 
                 <div class="ss-go-top">

@@ -23,10 +23,10 @@
             </div>
 
             <ul class="intro-social">
-                <li><a href="#0">Behance</a></li>
-                <li><a href="#0">Twitter</a></li>
-                <li><a href="#0">Dribbble</a></li>
-                <li><a href="#0">Instagram</a></li>
+                <li><a href="https://github.com/ArhabSafwan" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/arhab-safwan-b68a1317b/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://x.com/ArhabSafwan" target="_blank">Twitter</a></li>
+                <li><a href="https://www.facebook.com/arhab.rab" target="_blank">Facebook</a></li>
             </ul>
 
         </div> <!-- end intro content -->
@@ -450,13 +450,13 @@
 
                     <div class="modal-popup__desc">
                         <h5>BRAC Otithi</h5>
-                            <p>
-                                A tourism-focused web platform where international and local visitors can explore and purchase curated travel packages across Bangladesh, complete with payment integration and CMS support.
-                            </p>
-                            <ul class="modal-popup__cat">
-                                <li>Web Application</li>
-                                <li>With CMS</li>
-                            </ul>
+                        <p>
+                            A tourism-focused web platform where international and local visitors can explore and purchase curated travel packages across Bangladesh, complete with payment integration and CMS support.
+                        </p>
+                        <ul class="modal-popup__cat">
+                            <li>Web Application</li>
+                            <li>With CMS</li>
+                        </ul>
                     </div>
 
                     <a href="https://otithi.brac.net/" target="_blank" class="modal-popup__details">Project link</a>
@@ -550,83 +550,6 @@
 
         </div> <!-- end works-portfolio -->
 
-
-        <div class="row testimonials">
-            <div class="column lg-12" data-animate-block="">
-
-                <div class="swiper-container testimonial-slider" data-animate-el="">
-
-                    <div class="swiper-wrapper">
-
-                        <div class="testimonial-slider__slide swiper-slide">
-                            <div class="testimonial-slider__author">
-                                <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
-                                <cite class="testimonial-slider__cite">
-                                    <strong>Tim Cook</strong>
-                                    <span>CEO, Apple</span>
-                                </cite>
-                            </div>
-                            <p>
-                                Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem.
-                                Explicabo a quaerat sint autem dolore ducimus ut consequatur neque. Nisi dolores quaerat fuga rem nihil nostrum.
-                                Laudantium quia consequatur molestias delectus culpa.
-                            </p>
-                        </div> <!-- end testimonial-slider__slide -->
-
-                        <div class="testimonial-slider__slide swiper-slide">
-                            <div class="testimonial-slider__author">
-                                <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonial-slider__avatar">
-                                <cite class="testimonial-slider__cite">
-                                    <strong>Sundar Pichai</strong>
-                                    <span>CEO, Google</span>
-                                </cite>
-                            </div>
-                            <p>
-                                Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
-                                Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
-                                Quasi voluptas eius distinctio. Atque eos maxime.
-                            </p>
-                        </div> <!-- end testimonial-slider__slide -->
-
-                        <div class="testimonial-slider__slide swiper-slide">
-                            <div class="testimonial-slider__author">
-                                <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonial-slider__avatar">
-                                <cite class="testimonial-slider__cite">
-                                    <strong>Satya Nadella</strong>
-                                    <span>CEO, Microsoft</span>
-                                </cite>
-                            </div>
-                            <p>
-                                Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.
-                                Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
-                                Voluptatem dignissimos ut.
-                            </p>
-                        </div> <!-- end testimonial-slider__slide -->
-
-                        <div class="testimonial-slider__slide swiper-slide">
-                            <div class="testimonial-slider__author">
-                                <img src="images/avatars/user-06.jpg" alt="Author image" class="testimonial-slider__avatar">
-                                <cite class="testimonial-slider__cite">
-                                    <strong>Jeff Bezos</strong>
-                                    <span>CEO, Amazon</span>
-                                </cite>
-                            </div>
-                            <p>
-                                Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis
-                                quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti expedita voluptas odit.
-                                Nihil ea quia nesciunt. Ducimus aut sed ipsam.
-                            </p>
-                        </div> <!-- end testimonial-slider__slide -->
-
-                    </div> <!-- end swiper-wrapper -->
-
-                    <div class="swiper-pagination"></div>
-
-                </div> <!-- end swiper-container -->
-
-            </div> <!-- end column -->
-        </div> <!-- end row testimonials -->
-
     </section> <!-- end s-works -->
 
 
@@ -653,17 +576,16 @@
                 <h3 class="text-pretitle">Reach me at</h3>
                 <p class="contact-links">
                     <a href="asafwan72@gmail.com" class="mailtoui">asafwan72@gmail.com</a> <br>
-                    <a href="tel:+1975432345">+197 543 2345</a>
+                    <a href="tel:+1975432345">+88 017 066 42926</a>
                 </p>
             </div>
             <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
                 <h3 class="text-pretitle">Social</h3>
                 <ul class="contact-social">
-                    <li><a href="#0">Behance</a></li>
-                    <li><a href="#0">Dribble</a></li>
-                    <li><a href="#0">Twitter</a></li>
-                    <li><a href="#0">Instagram</a></li>
-                    <li><a href="#0">Github</a></li>
+                    <li><a href="https://github.com/ArhabSafwan" target="_blank">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/arhab-safwan-b68a1317b/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://x.com/ArhabSafwan" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.facebook.com/arhab.rab" target="_blank">Facebook</a></li>
                 </ul>
             </div>
             <div class="column lg-4 md-12 contact-block">
