@@ -48,7 +48,7 @@
         <div class="row about-info wide" data-animate-block="">
 
             <div class="column lg-6 md-12 about-info__pic-block">
-                <img src="images/about-photo.jpg" srcset="images/about-photo.jpg 1x, images/about-photo%402x.jpg 2x" alt="" class="about-info__pic" data-animate-el="">
+                <img src="images/about-photo.jpg" srcset="images/about-photo.jpg 1x, images/about-photo.jpg 2x" alt="" class="about-info__pic" data-animate-el="">
             </div>
 
             <div class="column lg-6 md-12">
@@ -323,7 +323,7 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-01">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/portfolio-15.png" srcset="images/portfolio/portfolio-15.png 1x, images/portfolio/portfolio-15%402x.jpg 2x" alt="">
+                                <img src="images/portfolio/portfolio-15.png" srcset="images/portfolio/portfolio-15.png 1x, images/portfolio/portfolio-15.jpg 2x" alt="">
                             </div>
 
                             <div class="folio-list__item-text">
@@ -345,7 +345,7 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-02">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/portfolio-14.png" srcset="images/portfolio/portfolio-14.png 1x, images/portfolio/portfolio-14%402x.jpg 2x" alt="">
+                                <img src="images/portfolio/portfolio-14.png" srcset="images/portfolio/portfolio-14.png 1x, images/portfolio/portfolio-14.jpg 2x" alt="">
                             </div>
 
                             <div class="folio-list__item-text">
@@ -367,7 +367,7 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-03">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/portfolio-16.png" srcset="images/portfolio/portfolio-16.png 1x, images/portfolio/portfolio-16%402x.jpg 2x" alt="">
+                                <img src="images/portfolio/portfolio-16.png" srcset="images/portfolio/portfolio-16.png 1x, images/portfolio/portfolio-16.jpg 2x" alt="">
                             </div>
 
                             <div class="folio-list__item-text">
@@ -389,7 +389,7 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-04">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/portfolio-13.png" srcset="images/portfolio/portfolio-13.png 1x, images/portfolio/portfolio-13%402x.jpg 2x" alt="">
+                                <img src="images/portfolio/portfolio-13.png" srcset="images/portfolio/portfolio-13.png 1x, images/portfolio/portfolio-13.jpg 2x" alt="">
                             </div>
 
                             <div class="folio-list__item-text">
@@ -411,7 +411,7 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-05">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/portfolio-17.png" srcset="images/portfolio/portfolio-17.png 1x, images/portfolio/portfolio-17%402x.jpg 2x" alt="">
+                                <img src="images/portfolio/portfolio-17.png" srcset="images/portfolio/portfolio-17.png 1x, images/portfolio/portfolio-17.jpg 2x" alt="">
                             </div>
 
                             <div class="folio-list__item-text">
@@ -433,7 +433,7 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-06">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/portfolio-5.png" srcset="images/portfolio/portfolio-5.png 1x, images/portfolio/portfolio-5%402x.jpg 2x" alt="">
+                                <img src="images/portfolio/portfolio-5.png" srcset="images/portfolio/portfolio-5.png 1x, images/portfolio/portfolio-5.jpg 2x" alt="">
                             </div>
 
                             <div class="folio-list__item-text">
@@ -454,7 +454,7 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-07">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/portfolio-12.png" srcset="images/portfolio/portfolio-12.png 1x, images/portfolio/portfolio-12%402x.jpg 2x" alt="">
+                                <img src="images/portfolio/portfolio-12.png" srcset="images/portfolio/portfolio-12.png 1x, images/portfolio/portfolio-12.jpg 2x" alt="">
                             </div>
 
                             <div class="folio-list__item-text">
@@ -475,7 +475,7 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-08">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/portfolio-18.png" srcset="images/portfolio/portfolio-18.png 1x, images/portfolio/portfolio-18%402x.jpg 2x" alt="">
+                                <img src="images/portfolio/portfolio-18.png" srcset="images/portfolio/portfolio-18.png 1x, images/portfolio/portfolio-18.jpg 2x" alt="">
                             </div>
 
                             <div class="folio-list__item-text">
