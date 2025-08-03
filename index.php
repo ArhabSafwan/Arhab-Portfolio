@@ -233,10 +233,10 @@
 
                             <div class="folio-list__item-text">
                                 <div class="folio-list__item-cat">
-                                    Website
+                                    Web Application with CMS
                                 </div>
                                 <div class="folio-list__item-title">
-                                    Retro Camera.
+                                    BRAC Frugal Innovation Forum.
                                 </div>
                             </div>
                         </a>
@@ -255,10 +255,10 @@
 
                             <div class="folio-list__item-text">
                                 <div class="folio-list__item-cat">
-                                    Product Design
+                                    Web Application with CMS
                                 </div>
                                 <div class="folio-list__item-title">
-                                    The White Lamp.
+                                    Unicef BD Wash Data.
                                 </div>
                             </div>
                         </a>
@@ -277,10 +277,10 @@
 
                             <div class="folio-list__item-text">
                                 <div class="folio-list__item-cat">
-                                    Branding
+                                    Web Application with CMS
                                 </div>
                                 <div class="folio-list__item-title">
-                                    Rucksuck.
+                                    BRAC Otithi.
                                 </div>
                             </div>
                         </a>
@@ -299,10 +299,10 @@
 
                             <div class="folio-list__item-text">
                                 <div class="folio-list__item-cat">
-                                    Website
+                                    Management Information System
                                 </div>
                                 <div class="folio-list__item-title">
-                                    Since Day One.
+                                    Unicef BD Wash Admin Panel.
                                 </div>
                             </div>
                         </a>
@@ -321,10 +321,10 @@
 
                             <div class="folio-list__item-text">
                                 <div class="folio-list__item-cat">
-                                    Illustration
+                                    Web Application with CMS
                                 </div>
                                 <div class="folio-list__item-title">
-                                    Sand Dunes.
+                                    Asian Woman Laboratory School.
                                 </div>
                             </div>
                         </a>
@@ -343,10 +343,10 @@
 
                             <div class="folio-list__item-text">
                                 <div class="folio-list__item-cat">
-                                    Branding
+                                    Website
                                 </div>
                                 <div class="folio-list__item-title">
-                                    Minimalismo.
+                                    Webloom.
                                 </div>
                             </div>
                         </a>
@@ -364,10 +364,10 @@
 
                             <div class="folio-list__item-text">
                                 <div class="folio-list__item-cat">
-                                    Branding
+                                    Management Information System
                                 </div>
                                 <div class="folio-list__item-title">
-                                    Minimalismo.
+                                    Brac Migration MIS.
                                 </div>
                             </div>
                         </a>
@@ -385,10 +385,10 @@
 
                             <div class="folio-list__item-text">
                                 <div class="folio-list__item-cat">
-                                    Branding
+                                    School Management System
                                 </div>
                                 <div class="folio-list__item-title">
-                                    Minimalismo.
+                                    Asian Woman Laboratory School Management System.
                                 </div>
                             </div>
                         </a>
@@ -411,11 +411,13 @@
                     <img src="images/portfolio/gallery/g-portfolio-15.png" alt="">
 
                     <div class="modal-popup__desc">
-                        <h5>Retro Camera</h5>
-                        <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda iure et expedita voluptatem. Ratione officiis quae.</p>
+                        <h5>Frugal Innovation Forum</h5>
+                        <p>
+                            A custom-built registration platform for the FIF 2025 conference, featuring user package selection, Portpos payment integration, and an admin panel with CMS functionality.
+                        </p>
                         <ul class="modal-popup__cat">
-                            <li>Branding</li>
-                            <li>Product Design</li>
+                            <li>Web Application</li>
+                            <li>With CMS</li>
                         </ul>
                     </div>
 
@@ -428,14 +430,17 @@
                     <img src="images/portfolio/gallery/g-portfolio-14.png" alt="">
 
                     <div class="modal-popup__desc">
-                        <h5>The White Lamp</h5>
-                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                        <h5>Unicef BD Wash Data</h5>
+                        <p>
+                            A data-driven web platform built for UNICEF to monitor WASH (Water, Sanitation, and Hygiene) indicators across Bangladesh, featuring interactive dashboards and a full CMS for data management.
+                        </p>
                         <ul class="modal-popup__cat">
-                            <li>Branding</li>
+                            <li>Web Application</li>
+                            <li>With CMS</li>
                         </ul>
                     </div>
 
-                    <a href="https://bdwashdata.com/" class="modal-popup__details">Project link</a>
+                    <a href="https://bdwashdata.com/" target="_blank" class="modal-popup__details">Project link</a>
                 </div>
             </div> <!-- end modal -->
 
@@ -444,14 +449,17 @@
                     <img src="images/portfolio/gallery/g-portfolio-16.png" alt="">
 
                     <div class="modal-popup__desc">
-                        <h5>Rucksuck</h5>
-                        <p>Exercitationem reprehenderit quod explicabo consequatur aliquid ut magni ut. Deleniti quo corrupti illum velit eveniet ratione necessitatibus ipsam mollitia.</p>
-                        <ul class="modal-popup__cat">
-                            <li>Product Design</li>
-                        </ul>
+                        <h5>BRAC Otithi</h5>
+                            <p>
+                                A tourism-focused web platform where international and local visitors can explore and purchase curated travel packages across Bangladesh, complete with payment integration and CMS support.
+                            </p>
+                            <ul class="modal-popup__cat">
+                                <li>Web Application</li>
+                                <li>With CMS</li>
+                            </ul>
                     </div>
 
-                    <a href="https://otithi.brac.net/" class="modal-popup__details">Project link</a>
+                    <a href="https://otithi.brac.net/" target="_blank" class="modal-popup__details">Project link</a>
                 </div>
             </div> <!-- end modal -->
 
@@ -460,14 +468,16 @@
                     <img src="images/portfolio/gallery/g-portfolio-13.png" alt="">
 
                     <div class="modal-popup__desc">
-                        <h5>Since Day One</h5>
-                        <p>Dolores velit qui quos nobis. Aliquam delectus voluptas quos possimus non voluptatem voluptas voluptas. Est doloribus eligendi porro doloribus voluptatum.</p>
+                        <h5>Unicef BD Wash Admin Panel</h5>
+                        <p>
+                            A robust admin dashboard for managing nationwide WASH data, featuring warehouse oversight, facility data collection, user role assignment, and real-time analytics across Bangladesh.
+                        </p>
                         <ul class="modal-popup__cat">
-                            <li>Website</li>
+                            <li>Management Information System</li>
                         </ul>
                     </div>
 
-                    <a href="https://bdwashdata.com/wash_admin" class="modal-popup__details">Project link</a>
+                    <a href="https://bdwashdata.com/wash_admin" target="_blank" class="modal-popup__details">Project link</a>
                 </div>
             </div> <!-- end modal -->
 
@@ -477,14 +487,16 @@
                     <img src="images/portfolio/gallery/g-portfolio-17.png" alt="">
 
                     <div class="modal-popup__desc">
-                        <h5>Sand Dunes</h5>
-                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                        <h5>Asian Woman Laboratory</h5>
+                        <p>
+                            A collaborative online platform designed to empower Asian women in STEM fields through resources, mentorship, and community engagement.
+                        </p>
                         <ul class="modal-popup__cat">
-                            <li>Illustration</li>
+                            <li>Content Management System</li>
                         </ul>
                     </div>
 
-                    <a href="https://labschool.auw.edu.bd/" class="modal-popup__details">Project link</a>
+                    <a href="https://labschool.auw.edu.bd/" target="_blank" class="modal-popup__details">Project link</a>
                 </div>
             </div> <!-- end modal -->
 
@@ -493,15 +505,16 @@
                     <img src="images/portfolio/gallery/g-portfolio-5.png" alt="">
 
                     <div class="modal-popup__desc">
-                        <h5>Minimalismo</h5>
-                        <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia cupiditate voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>
+                        <h5>Webloom</h5>
+                        <p>
+                            A digital agency platform aimed to create stunning websites and digital experiences.
+                        </p>
                         <ul class="modal-popup__cat">
-                            <li>Branding</li>
-                            <li>Product Design</li>
+                            <li>Website</li>
                         </ul>
                     </div>
 
-                    <a href="https://webloomst.net/" class="modal-popup__details">Project link</a>
+                    <a href="https://webloomst.net/" target="_blank" class="modal-popup__details">Project link</a>
                 </div>
             </div> <!-- end modal -->
             <div id="modal-07" hidden="">
@@ -509,15 +522,14 @@
                     <img src="images/portfolio/gallery/g-portfolio-12.png" alt="">
 
                     <div class="modal-popup__desc">
-                        <h5>Minimalismo</h5>
-                        <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia cupiditate voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>
+                        <h5>BRAC Migration MIS</h5>
+                        <p>A comprehensive management information system designed to streamline the migration process and enhance data-driven decision-making for returning emigrants.</p>
                         <ul class="modal-popup__cat">
-                            <li>Branding</li>
-                            <li>Product Design</li>
+                            <li>Management Information System</li>
                         </ul>
                     </div>
 
-                    <a href="https://migrationmis.brac.net/" class="modal-popup__details">Project link</a>
+                    <a href="https://migrationmis.brac.net/" target="_blank" class="modal-popup__details">Project link</a>
                 </div>
             </div> <!-- end modal -->
             <div id="modal-08" hidden="">
@@ -525,15 +537,14 @@
                     <img src="images/portfolio/gallery/g-portfolio-18.png" alt="">
 
                     <div class="modal-popup__desc">
-                        <h5>Minimalismo</h5>
-                        <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia cupiditate voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>
+                        <h5>Asian Woman Laboratory School Management System</h5>
+                        <p>A comprehensive school management system designed to support the unique needs of Asian women in education.</p>
                         <ul class="modal-popup__cat">
-                            <li>Branding</li>
-                            <li>Product Design</li>
+                            <li>Management Information System</li>
                         </ul>
                     </div>
 
-                    <a href="https://labmis.auw.edu.bd/" class="modal-popup__details">Project link</a>
+                    <a href="https://labmis.auw.edu.bd/" target="_blank" class="modal-popup__details">Project link</a>
                 </div>
             </div> <!-- end modal -->
 
