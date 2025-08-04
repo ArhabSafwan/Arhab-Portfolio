@@ -79,7 +79,7 @@
         <div class="row about-info wide" data-animate-block="">
 
             <div class="column lg-6 md-12 about-info__pic-block">
-                <img src="images/about-photo.jpg" srcset="images/about-photo.jpg 1x, images/about-photo.jpg 2x" alt="" class="about-info__pic" data-animate-el="">
+                <img data-src="images/about-photo.jpg" srcset="images/about-photo.jpg 1x, images/about-photo.jpg 2x" alt="" class="about-info__pic lazyload" data-animate-el="">
             </div>
 
             <div class="column lg-6 md-12">
@@ -355,7 +355,7 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-01">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/portfolio-15.png" src="images/portfolio/portfolio-15.png" alt="">
+                                <img data-src="images/portfolio/portfolio-15.png" alt="" class="lazyload">
                             </div>
 
                             <div class="folio-list__item-text">
@@ -377,7 +377,7 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-02">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/portfolio-14.png" src="images/portfolio/portfolio-14.png" alt="">
+                                <img data-src="images/portfolio/portfolio-14.png" alt="" class="lazyload">
                             </div>
 
                             <div class="folio-list__item-text">
@@ -399,7 +399,7 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-03">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/portfolio-16.png" src="images/portfolio/portfolio-16.png" alt="">
+                                <img data-src="images/portfolio/portfolio-16.png" alt="" class="lazyload">
                             </div>
 
                             <div class="folio-list__item-text">
@@ -421,7 +421,7 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-04">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/portfolio-13.png" src="images/portfolio/portfolio-13.png" alt="">
+                                <img data-src="images/portfolio/portfolio-13.png" alt="" class="lazyload">
                             </div>
 
                             <div class="folio-list__item-text">
@@ -443,7 +443,7 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-05">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/portfolio-17.png" src="images/portfolio/portfolio-17.png" alt="">
+                                <img data-src="images/portfolio/portfolio-17.png" alt="" class="lazyload">
                             </div>
 
                             <div class="folio-list__item-text">
@@ -465,7 +465,7 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-06">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/portfolio-5.png" src="images/portfolio/portfolio-5.png" alt="">
+                                <img data-src="images/portfolio/portfolio-5.png" alt="" class="lazyload">
                             </div>
 
                             <div class="folio-list__item-text">
@@ -486,7 +486,7 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-07">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/portfolio-12.png" src="images/portfolio/portfolio-12.png" alt="">
+                                <img data-src="images/portfolio/portfolio-12.png" alt="" class="lazyload">
                             </div>
 
                             <div class="folio-list__item-text">
@@ -507,7 +507,7 @@
                     <li class="folio-list__item column" data-animate-el="">
                         <a class="folio-list__item-link" href="#modal-08">
                             <div class="folio-list__item-pic">
-                                <img src="images/portfolio/portfolio-18.png" src="images/portfolio/portfolio-18.png" alt="">
+                                <img data-src="images/portfolio/portfolio-18.png" alt="" class="lazyload">
                             </div>
 
                             <div class="folio-list__item-text">
@@ -535,7 +535,7 @@
                     -------------------------------------------- -->
             <div id="modal-01" hidden="">
                 <div class="modal-popup">
-                    <img src="images/portfolio/gallery/g-portfolio-15.png" alt="">
+                    <img data-src="images/portfolio/gallery/g-portfolio-15.png" alt="" class="lazyload">
 
                     <div class="modal-popup__desc">
                         <h5>Frugal Innovation Forum</h5>
@@ -554,7 +554,7 @@
 
             <div id="modal-02" hidden="">
                 <div class="modal-popup">
-                    <img src="images/portfolio/gallery/g-portfolio-14.png" alt="">
+                    <img data-src="images/portfolio/gallery/g-portfolio-14.png" alt="" class="lazyload">
 
                     <div class="modal-popup__desc">
                         <h5>Unicef BD Wash Data</h5>
@@ -573,7 +573,7 @@
 
             <div id="modal-03" hidden="">
                 <div class="modal-popup">
-                    <img src="images/portfolio/gallery/g-portfolio-16.png" alt="">
+                    <img data-src="images/portfolio/gallery/g-portfolio-16.png" alt="" class="lazyload">
 
                     <div class="modal-popup__desc">
                         <h5>BRAC Otithi</h5>
@@ -592,7 +592,7 @@
 
             <div id="modal-04" hidden="">
                 <div class="modal-popup">
-                    <img src="images/portfolio/gallery/g-portfolio-13.png" alt="">
+                    <img data-src="images/portfolio/gallery/g-portfolio-13.png" alt="" class="lazyload">
 
                     <div class="modal-popup__desc">
                         <h5>Unicef BD Wash Admin Panel</h5>
@@ -611,7 +611,7 @@
             <div id="modal-05" hidden="">
                 <div class="modal-popup">
 
-                    <img src="images/portfolio/gallery/g-portfolio-17.png" alt="">
+                    <img data-src="images/portfolio/gallery/g-portfolio-17.png" alt="" class="lazyload">
 
                     <div class="modal-popup__desc">
                         <h5>Asian Woman Laboratory</h5>
@@ -629,7 +629,7 @@
 
             <div id="modal-06" hidden="">
                 <div class="modal-popup">
-                    <img src="images/portfolio/gallery/g-portfolio-5.png" alt="">
+                    <img data-src="images/portfolio/gallery/g-portfolio-5.png" alt="" class="lazyload">
 
                     <div class="modal-popup__desc">
                         <h5>Webloom</h5>
@@ -646,7 +646,7 @@
             </div> <!-- end modal -->
             <div id="modal-07" hidden="">
                 <div class="modal-popup">
-                    <img src="images/portfolio/gallery/g-portfolio-12.png" alt="">
+                    <img data-src="images/portfolio/gallery/g-portfolio-12.png" alt="" class="lazyload">
 
                     <div class="modal-popup__desc">
                         <h5>BRAC Migration MIS</h5>
@@ -703,7 +703,7 @@
                     <a href="asafwan72@gmail.com" class="mailtoui">asafwan72@gmail.com</a> <br>
                     <a href="tel:+1975432345">+88 017 066 42926</a>
                 </p>
-            </div>
+                            </div>
             <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
                 <h3 class="text-pretitle">Social</h3>
                 <ul class="contact-social">
@@ -712,7 +712,7 @@
                     <li><a href="https://x.com/ArhabSafwan" target="_blank">Twitter</a></li>
                     <li><a href="https://www.facebook.com/arhab.rab" target="_blank">Facebook</a></li>
                 </ul>
-            </div>
+                        </div>
             <div class="column lg-4 md-12 contact-block">
                 <a href="mailto:asafwan72@gmail.com" class="mailtoui btn btn--medium u-fullwidth contact-btn">Say Hello.</a>
             </div>

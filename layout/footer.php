@@ -23,28 +23,7 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://afarkas.github.io/lazysizes/lazysizes.min.js" async=""></script>
     <script src="js/main.js"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var options = {
-                strings: [
-                    "a Software Engineer.",
-                    "a Full-Stack Developer.",
-                    "a Problem Solver."
-                ],
-                typeSpeed: 50,
-                backSpeed: 25,
-                backDelay: 2000,
-                startDelay: 500,
-                loop: true,
-                showCursor: true,
-                cursorChar: "|",
-                contentType: 'html',
-            };
-            var typed = new Typed('.s-intro .dynamic-text', options);
-        });
-    </script>
-
 </body>
 </html>

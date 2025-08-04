@@ -303,6 +303,25 @@
 
     }; // end ssAlertBoxes
 
+    const dynamiText = function () {
+        var options = {
+            strings: [
+                "a Software Engineer.",
+                "a Full-Stack Developer.",
+                "a Problem Solver."
+            ],
+            typeSpeed: 50,
+            backSpeed: 25,
+            backDelay: 2000,
+            startDelay: 500,
+            loop: true,
+            showCursor: true,
+            cursorChar: "|",
+            contentType: 'html',
+        };
+        var typed = new Typed('.s-intro .dynamic-text', options);
+    }
+
 
     /* Smoothscroll
      * ------------------------------------------------------ */
@@ -359,6 +378,7 @@
         ssLightbox();
         ssAlertBoxes();
         ssMoveTo();
+        dynamiText();
 
     })();
 
