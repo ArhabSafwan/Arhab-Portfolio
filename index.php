@@ -18,7 +18,7 @@
 
                 <h1 class="text-huge-title">
                     I am Arhab Safwan, <br>
-                    a Software Engineer.
+                    <span class="dynamic-text"></span>
                 </h1>
 
                 <ul class="intro-social-icons">
