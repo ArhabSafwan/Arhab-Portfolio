@@ -79,7 +79,7 @@
         <div class="row about-info wide" data-animate-block="">
 
             <div class="column lg-6 md-12 about-info__pic-block">
-                <img data-src="images/about-photo.jpg" srcset="images/about-photo.jpg 1x, images/about-photo.jpg 2x" alt="" class="about-info__pic lazyload" data-animate-el="">
+                <img data-src="images/about-photo.jpg" srcset="images/about-photo.jpg" alt="" class="about-info__pic lazyload" data-animate-el="">
             </div>
 
             <div class="column lg-6 md-12">
