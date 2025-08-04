@@ -4235,3 +4235,15 @@ img.u-pull-left {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
+
+.about-info__pic {
+    border: 10px solid #eabe7b;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.about-info__pic:hover {
+    box-shadow: 0 0 30px #eabe7b;
+    transform: scale(1.02);
+}
