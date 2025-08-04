@@ -20,6 +20,13 @@
                     I am Arhab Safwan, <br>
                     a Software Engineer.
                 </h1>
+
+                <ul class="intro-social-icons">
+                    <li><a href="https://www.linkedin.com/in/arhab-safwan-b68a1317b/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/ArhabSafwan" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.facebook.com/arhab.rab" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://x.com/ArhabSafwan" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                </ul>
             </div>
 
             <ul class="intro-social">
@@ -30,6 +37,30 @@
             </ul>
 
         </div> <!-- end intro content -->
+
+        <style>
+            .intro-social-icons {
+                list-style: none;
+                margin-top: 2rem;
+                padding: 0;
+                display: flex;
+                justify-content: flex-start;
+                gap: 20px;
+            }
+
+            .intro-social-icons li {
+                padding: 0;
+            }
+
+            .intro-social-icons li a {
+                color: white;
+                font-size: 24px;
+            }
+
+            .intro-social-icons li a:hover {
+                color: var(--color-1);
+            }
+        </style>
 
         <a href="#about" class="intro-scrolldown smoothscroll">
             <svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
