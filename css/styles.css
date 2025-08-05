@@ -1062,6 +1062,15 @@ textarea {
         margin-left: 0;
         margin-right: 0;
     }
+
+    .s-services .service-item__icon {
+        text-align: center;
+        width: 100%;
+    }
+
+    .s-services .service-item__text h3 {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 550px) {
