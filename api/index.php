@@ -20,11 +20,7 @@
                 <a href="#experience" class="eyebrow text-xs border border-white/15 text-offwhite px-6 py-3 rounded-full hover:border-gold hover:text-gold transition-colors">EXPERIENCE ↓</a>
             </div>
             <div class="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-slategray font-mono">
-                <span>Sector-7, Uttara, Dhaka</span>
-                <span class="text-gold/40">·</span>
-                <span>+8801706642926</span>
-                <span class="text-gold/40">·</span>
-                <span>asafwan72@gmail.com</span>
+                <span>Dhaka, Bangladesh</span>
             </div>
         </div>
 
@@ -91,12 +87,12 @@
                 <h3 class="font-display text-2xl md:text-3xl mb-1">Senior Full Stack Software Engineer</h3>
                 <p class="text-gold text-sm mb-6 font-mono">3DEVS IT LTD.</p>
                 <ul class="space-y-3 text-slategray text-[15px] leading-relaxed max-w-3xl">
-                    <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Spearheaded architectural decisions for enterprise-scale Laravel and Next.js applications, mentoring 2 junior engineers and reducing review turnaround time by <span class="text-offwhite font-medium">~50%</span>.</li>
-                    <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Engineered AI-accelerated workflows using Cursor and Claude Code, cutting feature-delivery time by approximately <span class="text-offwhite font-medium">40%</span> across the team's sprint output.</li>
-                    <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Led migration of legacy monolithic modules to a modular, component-driven Next.js/React architecture, reducing bundle size by <span class="text-offwhite font-medium">90%</span>.</li>
-                    <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Architected a fintech payment layer integrating PortPOS and Cybersource — supporting bKash IPN, Visa/Mastercard, and bank EMI — processing <span class="text-offwhite font-medium">100+ transactions daily</span>.</li>
-                    <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Directed an interactive GeoJSON-based mapping system for Bangladesh's divisions, districts, and upazilas, improving query performance by <span class="text-offwhite font-medium">85%</span>.</li>
-                    <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Owned RESTful API design and load-balancing strategy for high-traffic systems, maintaining <span class="text-offwhite font-medium">~99% uptime</span>.</li>
+                    <li class="gap-3"><span class="text-gold shrink-0">▸</span>Spearheaded architectural decisions for enterprise-scale Laravel and Next.js applications, mentoring 2 junior engineers and reducing review turnaround time by <span class="text-offwhite font-medium">~50%</span>.</li>
+                    <li class="gap-3"><span class="text-gold shrink-0">▸</span>Engineered AI-accelerated workflows using Cursor and Claude Code, cutting feature-delivery time by approximately <span class="text-offwhite font-medium">40%</span> across the team's sprint output.</li>
+                    <li class="gap-3"><span class="text-gold shrink-0">▸</span>Led migration of legacy monolithic modules to a modular, component-driven Next.js/React architecture, reducing bundle size by <span class="text-offwhite font-medium">90%</span>.</li>
+                    <li class="gap-3"><span class="text-gold shrink-0">▸</span>Architected a fintech payment layer integrating PortPOS and Cybersource — supporting bKash IPN, Visa/Mastercard, and bank EMI — processing <span class="text-offwhite font-medium">100+ transactions daily</span>.</li>
+                    <li class="gap-3"><span class="text-gold shrink-0">▸</span>Directed an interactive GeoJSON-based mapping system for Bangladesh's divisions, districts, and upazilas, improving query performance by <span class="text-offwhite font-medium">85%</span>.</li>
+                    <li class="gap-3"><span class="text-gold shrink-0">▸</span>Owned RESTful API design and load-balancing strategy for high-traffic systems, maintaining <span class="text-offwhite font-medium">~99% uptime</span>.</li>
                 </ul>
             </div>
 
@@ -107,11 +103,11 @@
                 <h3 class="font-display text-2xl md:text-3xl mb-1">Full Stack Software Engineer</h3>
                 <p class="text-gold text-sm mb-6 font-mono">3DEVS IT LTD.</p>
                 <ul class="space-y-3 text-slategray text-[15px] leading-relaxed max-w-3xl">
-                    <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Architected and maintained scalable Laravel applications, improving system performance for enterprise-level projects.</li>
-                    <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Built and deployed Single Sign-On (SSO) authentication for the BRAC Migration Management and Information System.</li>
-                    <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Engineered a full-text search engine, reducing average data-retrieval time across large datasets by <span class="text-offwhite font-medium">~90%</span>.</li>
-                    <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Implemented automated invoice generation and post-payment email workflows, eliminating manual financial processing.</li>
-                    <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Integrated AI tools (ChatGPT, GitHub Copilot) into daily workflow, shortening feature turnaround by <span class="text-offwhite font-medium">~60%</span> without compromising code quality.</li>
+                    <li class="gap-3"><span class="text-gold shrink-0">▸</span>Architected and maintained scalable Laravel applications, improving system performance for enterprise-level projects.</li>
+                    <li class="gap-3"><span class="text-gold shrink-0">▸</span>Built and deployed Single Sign-On (SSO) authentication for the BRAC Migration Management and Information System.</li>
+                    <li class="gap-3"><span class="text-gold shrink-0">▸</span>Engineered a full-text search engine, reducing average data-retrieval time across large datasets by <span class="text-offwhite font-medium">~90%</span>.</li>
+                    <li class="gap-3"><span class="text-gold shrink-0">▸</span>Implemented automated invoice generation and post-payment email workflows, eliminating manual financial processing.</li>
+                    <li class="gap-3"><span class="text-gold shrink-0">▸</span>Integrated AI tools (ChatGPT, GitHub Copilot) into daily workflow, shortening feature turnaround by <span class="text-offwhite font-medium">~60%</span> without compromising code quality.</li>
                 </ul>
             </div>
 
@@ -122,10 +118,10 @@
                 <h3 class="font-display text-2xl md:text-3xl mb-1">Full Stack Software Engineer</h3>
                 <p class="text-gold text-sm mb-6 font-mono">DEVTECHGURU LTD.</p>
                 <ul class="space-y-3 text-slategray text-[15px] leading-relaxed max-w-3xl">
-                    <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Engineered scalable software architecture for client systems including BRAC Frugal Innovation Forum and Brac Otithi, progressively owning system design decisions.</li>
-                    <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Optimized relational database schemas (MySQL) for data integrity and query efficiency, improving response times by <span class="text-offwhite font-medium">~90%</span>.</li>
-                    <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Implemented CI/CD pipelines (GitHub Actions, Docker) for automated testing and deployment.</li>
-                    <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Delivered full-stack features for international clients (UNICEF, Asian University for Women, Harvard's Wyss Institute) using Laravel, MySQL, and Tailwind CSS.</li>
+                    <li class="gap-3"><span class="text-gold shrink-0">▸</span>Engineered scalable software architecture for client systems including BRAC Frugal Innovation Forum and Brac Otithi, progressively owning system design decisions.</li>
+                    <li class="gap-3"><span class="text-gold shrink-0">▸</span>Optimized relational database schemas (MySQL) for data integrity and query efficiency, improving response times by <span class="text-offwhite font-medium">~90%</span>.</li>
+                    <li class="gap-3"><span class="text-gold shrink-0">▸</span>Implemented CI/CD pipelines (GitHub Actions, Docker) for automated testing and deployment.</li>
+                    <li class="gap-3"><span class="text-gold shrink-0">▸</span>Delivered full-stack features for international clients (UNICEF, Asian University for Women, Harvard's Wyss Institute) using Laravel, MySQL, and Tailwind CSS.</li>
                 </ul>
             </div>
         </div>
