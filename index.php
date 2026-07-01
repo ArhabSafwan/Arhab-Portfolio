@@ -1,725 +1,608 @@
-<?php include 'layout/header.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SM. Arhab Safwan — Senior Software Engineer</title>
 
-<!-- ## main content
-        ==================================================- -->
-<main class="s-content">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          obsidian: '#0B0C10',
+          panel: '#131519',
+          panel2: '#181B21',
+          gold: '#C5A880',
+          goldbright: '#DCC08F',
+          offwhite: '#F8FAFC',
+          slategray: '#94A3B8',
+        },
+        fontFamily: {
+          display: ['"Fraunces"', 'serif'],
+          body: ['"Inter"', 'sans-serif'],
+          mono: ['"JetBrains Mono"', 'monospace'],
+        },
+      }
+    }
+  }
+</script>
 
-    <!-- ### intro
-            ================================================== -->
-    <section id="intro" class="s-intro target-section">
+<style>
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: #0B0C10;
+    background-image:
+      radial-gradient(circle at 15% 0%, rgba(197,168,128,0.07), transparent 45%),
+      radial-gradient(circle at 85% 20%, rgba(197,168,128,0.05), transparent 40%);
+  }
 
-        <div class="row intro-content wide">
+  ::selection { background: #C5A880; color: #0B0C10; }
 
-            <div class="column">
-                <div class="text-pretitle with-line">
-                    Hello World
-                </div>
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: #0B0C10; }
+  ::-webkit-scrollbar-thumb { background: #2b2e35; border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: #C5A880; }
 
-                <h1 class="text-huge-title">
-                    I am Arhab Safwan, <br>
-                    <span class="dynamic-text"></span>
-                </h1>
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1);
+  }
+  .reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
-                <ul class="intro-social-icons">
-                    <li><a href="https://www.linkedin.com/in/arhab-safwan-b68a1317b/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://github.com/ArhabSafwan" target="_blank"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://www.facebook.com/arhab.rab" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://x.com/ArhabSafwan" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-            </div>
+  .hairline { background: linear-gradient(90deg, transparent, rgba(197,168,128,0.5), transparent); height: 1px; }
 
-            <ul class="intro-social">
-                <li><a href="https://github.com/ArhabSafwan" target="_blank">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/arhab-safwan-b68a1317b/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://x.com/ArhabSafwan" target="_blank">Twitter</a></li>
-                <li><a href="https://www.facebook.com/arhab.rab" target="_blank">Facebook</a></li>
-            </ul>
+  .eyebrow {
+    letter-spacing: 0.28em;
+    font-family: 'JetBrains Mono', monospace;
+  }
 
-        </div> <!-- end intro content -->
+  .frame-glow {
+    position: relative;
+  }
+  .frame-glow::before {
+    content: '';
+    position: absolute;
+    inset: -6px;
+    border-radius: 9999px;
+    padding: 2px;
+    background: conic-gradient(from 0deg, #C5A880, #4a4432, #C5A880, #211d15, #C5A880);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: spin-glow 6s linear infinite;
+    filter: drop-shadow(0 0 10px rgba(197,168,128,0.55));
+  }
+  @keyframes spin-glow {
+    to { transform: rotate(360deg); }
+  }
+  .frame-glow::after {
+    content: '';
+    position: absolute;
+    inset: -14px;
+    border-radius: 9999px;
+    box-shadow: 0 0 40px 6px rgba(197,168,128,0.18);
+    animation: pulse-ring 3.2s ease-in-out infinite;
+  }
+  @keyframes pulse-ring {
+    0%, 100% { opacity: 0.55; }
+    50% { opacity: 1; }
+  }
 
-        <style>
-            .intro-social-icons {
-                list-style: none;
-                margin-top: 2rem;
-                padding: 0;
-                display: flex;
-                justify-content: flex-start;
-                gap: 20px;
-            }
+  .metric-num {
+    font-variant-numeric: tabular-nums;
+  }
 
-            .intro-social-icons li {
-                padding: 0;
-            }
+  .timeline-line {
+    background: linear-gradient(180deg, rgba(197,168,128,0.9), rgba(197,168,128,0.05));
+  }
 
-            .intro-social-icons li a {
-                color: white;
-                font-size: 24px;
-            }
+  .timeline-dot {
+    box-shadow: 0 0 0 4px #0B0C10, 0 0 0 5px rgba(197,168,128,0.4), 0 0 16px rgba(197,168,128,0.7);
+  }
 
-            .intro-social-icons li a:hover {
-                color: var(--color-1);
-            }
-        </style>
+  .card-hover {
+    transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), border-color 0.35s ease, background-color 0.35s ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-4px);
+    border-color: rgba(197,168,128,0.55);
+    background-color: #181B21;
+  }
 
-        <a href="#about" class="intro-scrolldown smoothscroll">
-            <svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
-                <path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"></path>
-            </svg>
-        </a>
+  .skill-chip {
+    transition: all 0.25s ease;
+  }
+  .skill-chip:hover {
+    border-color: #C5A880;
+    color: #DCC08F;
+    background: rgba(197,168,128,0.08);
+  }
 
-    </section> <!-- end s-intro -->
+  .nav-link {
+    position: relative;
+  }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -4px;
+    width: 0%; height: 1px;
+    background: #C5A880;
+    transition: width 0.3s ease;
+  }
+  .nav-link:hover::after { width: 100%; }
 
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid #C5A880;
+    outline-offset: 3px;
+  }
 
-    <!-- ### about
-            ================================================== -->
-    <section id="about" class="s-about target-section">
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { transition: none; opacity: 1; transform: none; }
+    .frame-glow::before, .frame-glow::after { animation: none; }
+  }
+</style>
+</head>
 
+<body class="bg-obsidian text-offwhite font-body antialiased">
 
-        <div class="row about-info wide" data-animate-block="">
+<!-- ================= NAV ================= -->
+<nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-obsidian/70 border-b border-white/5">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 flex items-center justify-between h-16">
+    <a href="#top" class="font-display text-lg tracking-wide text-offwhite">S<span class="text-gold">.</span>A<span class="text-gold">.</span>S</a>
+    <div class="hidden md:flex items-center gap-8 text-sm text-slategray eyebrow text-[11px]">
+      <a href="#experience" class="nav-link hover:text-offwhite transition-colors">EXPERIENCE</a>
+      <a href="#skills" class="nav-link hover:text-offwhite transition-colors">SKILLS</a>
+      <a href="#projects" class="nav-link hover:text-offwhite transition-colors">PROJECTS</a>
+      <a href="#education" class="nav-link hover:text-offwhite transition-colors">EDUCATION</a>
+      <a href="#contact" class="nav-link hover:text-offwhite transition-colors">CONTACT</a>
+    </div>
+    <a href="mailto:asafwan72@gmail.com" class="hidden md:inline-block text-xs eyebrow border border-gold/50 text-gold px-4 py-2 rounded-full hover:bg-gold hover:text-obsidian transition-colors">GET IN TOUCH</a>
+  </div>
+</nav>
 
-            <div class="column lg-6 md-12 about-info__pic-block">
-                <img data-src="images/about-photo.jpg" srcset="images/about-photo.jpg" alt="" class="about-info__pic lazyload" data-animate-el="">
-            </div>
+<!-- ================= HERO ================= -->
+<header id="top" class="relative pt-40 pb-24 px-6 md:px-10 overflow-hidden">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-[1fr_auto] gap-14 items-center">
+    <div class="reveal">
+      <p class="eyebrow text-gold text-xs mb-5">SENIOR SOFTWARE ENGINEER · FULL-STACK · AI-ACCELERATED ENGINEERING</p>
+      <h1 class="font-display text-5xl md:text-7xl leading-[1.02] font-medium">
+        SM. Arhab<br><span class="text-gold italic font-light">Safwan</span>
+      </h1>
+      <p class="mt-8 max-w-xl text-slategray text-base md:text-lg leading-relaxed">
+        Architecting and scaling production web platforms across fintech, NGO, and higher-education
+        sectors — for organizations including <span class="text-offwhite">BRAC</span>,
+        <span class="text-offwhite">UNICEF</span>, and <span class="text-offwhite">Harvard's Wyss Institute</span>.
+        Early adopter of AI-augmented development, compressing sprint timelines without compromising
+        architecture.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#contact" class="eyebrow text-xs bg-gold text-obsidian px-6 py-3 rounded-full hover:bg-goldbright transition-colors">VIEW CONTACT</a>
+        <a href="#experience" class="eyebrow text-xs border border-white/15 text-offwhite px-6 py-3 rounded-full hover:border-gold hover:text-gold transition-colors">EXPERIENCE ↓</a>
+      </div>
+      <div class="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-slategray font-mono">
+        <span>Sector-7, Uttara, Dhaka</span>
+        <span class="text-gold/40">·</span>
+        <span>+8801706642926</span>
+        <span class="text-gold/40">·</span>
+        <span>asafwan72@gmail.com</span>
+      </div>
+    </div>
 
-            <div class="column lg-6 md-12">
-                <div class="about-info__text">
+    <div class="reveal justify-self-center">
+      <div class="frame-glow w-52 h-52 md:w-64 md:h-64 rounded-full">
+        <img src="assets/images/profile.jpg" alt="SM. Arhab Safwan" class="w-52 h-52 md:w-64 md:h-64 object-cover rounded-full border-4 border-obsidian relative z-10">
+      </div>
+    </div>
+  </div>
 
-                    <h2 class="text-pretitle with-line" data-animate-el="">
-                        About
-                    </h2>
-                    <p class="attention-getter" data-animate-el="">
-                        Passionate Software Engineer with 3+ years of experience in delivering successful global projects. Skilled in AI tools like ChatGPT and Copilot, and driven by innovation, adaptability, and continuous learning. Thrives in collaborative environments and aims to build impactful, forward-thinking solutions in an evolving tech world.
-                    </p>
-                    <a href="documents/Arhab CV.pdf" class="btn btn--medium u-fullwidth" data-animate-el="" download>Download CV</a>
+  <!-- Quick facts strip -->
+  <div class="reveal max-w-6xl mx-auto mt-20 grid grid-cols-2 md:grid-cols-4 gap-px bg-white/5 border border-white/5 rounded-2xl overflow-hidden">
+    <div class="bg-panel p-6 md:p-8">
+      <p class="font-display text-3xl md:text-4xl text-gold metric-num">4+ Years</p>
+      <p class="text-xs text-slategray mt-1 eyebrow">FULL-STACK ENGINEERING</p>
+    </div>
+    <div class="bg-panel p-6 md:p-8">
+      <p class="font-display text-3xl md:text-4xl text-gold metric-num">10+</p>
+      <p class="text-xs text-slategray mt-1 eyebrow">ENTERPRISE &amp; NGO PLATFORMS</p>
+    </div>
+    <div class="bg-panel p-6 md:p-8">
+      <p class="font-display text-3xl md:text-4xl text-gold metric-num">6 Tools</p>
+      <p class="text-xs text-slategray mt-1 eyebrow">CURSOR · CLAUDE CODE · COPILOT+</p>
+    </div>
+    <div class="bg-panel p-6 md:p-8">
+      <p class="font-display text-3xl md:text-4xl text-gold metric-num">3 Global</p>
+      <p class="text-xs text-slategray mt-1 eyebrow">BRAC · UNICEF · HARVARD</p>
+    </div>
+  </div>
+</header>
 
-                </div>
-            </div>
-        </div> <!-- about-info -->
+<div class="max-w-6xl mx-auto px-6 md:px-10"><div class="hairline"></div></div>
 
+<!-- ================= AI-ACCELERATED CALLOUT ================= -->
+<section class="px-6 md:px-10 py-20">
+  <div class="reveal max-w-6xl mx-auto rounded-2xl border border-gold/25 bg-gradient-to-br from-panel to-panel2 p-8 md:p-12 relative overflow-hidden">
+    <p class="eyebrow text-gold text-xs mb-4">AI-ACCELERATED DELIVERY</p>
+    <p class="font-display text-2xl md:text-3xl leading-snug max-w-3xl">
+      Leveraging <span class="text-gold">Cursor</span>, <span class="text-gold">Claude Code</span> &amp;
+      <span class="text-gold">Antigravity CLI</span> to ship features
+      <span class="text-gold italic">~40% faster</span>, reduce boilerplate-related bugs, and rapidly
+      prototype full-stack features without compromising code quality.
+    </p>
+  </div>
+</section>
 
-        <div class="row about-expertise" data-animate-block="">
-            <div class="column lg-12">
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="px-6 md:px-10 py-16">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal mb-16">
+      <p class="eyebrow text-gold text-xs mb-3">01 — CAREER PATH</p>
+      <h2 class="font-display text-4xl md:text-5xl">Professional Experience</h2>
+    </div>
 
-                <h2 class="text-pretitle" data-animate-el="">Expertise</h2>
+    <div class="relative pl-8 md:pl-12">
+      <div class="timeline-line absolute left-0 md:left-1 top-2 bottom-2 w-px"></div>
 
-                <ul class="skills-list h1" data-animate-el="">
-                    <li>Frontend Development</li>
-                    <li>Backend Development</li>
-                    <li>Web Application Development</li>
-                    <li>API Integration</li>
-                    <li>ERP & CMS Implementation</li>
-                    <li>CRM Systems</li>
-                    <li>Cloud & DevOps</li>
-                    <li>Full-Stack Engineering</li>
-                    <li>AI-Powered Development (ChatGPT, Copilot).</li>
-                </ul>
+      <!-- Job 1 -->
+      <div class="reveal relative mb-16">
+        <span class="timeline-dot absolute -left-8 md:-left-11 top-2 w-2.5 h-2.5 rounded-full bg-gold"></span>
+        <p class="eyebrow text-xs text-slategray mb-1">MAY 2025 — PRESENT</p>
+        <h3 class="font-display text-2xl md:text-3xl mb-1">Senior Full Stack Software Engineer</h3>
+        <p class="text-gold text-sm mb-6 font-mono">3DEVS IT LTD.</p>
+        <ul class="space-y-3 text-slategray text-[15px] leading-relaxed max-w-3xl">
+          <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Spearheaded architectural decisions for enterprise-scale Laravel and Next.js applications, mentoring 2 junior engineers and reducing review turnaround time by <span class="text-offwhite font-medium">~50%</span>.</li>
+          <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Engineered AI-accelerated workflows using Cursor and Claude Code, cutting feature-delivery time by approximately <span class="text-offwhite font-medium">40%</span> across the team's sprint output.</li>
+          <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Led migration of legacy monolithic modules to a modular, component-driven Next.js/React architecture, reducing bundle size by <span class="text-offwhite font-medium">90%</span>.</li>
+          <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Architected a fintech payment layer integrating PortPOS and Cybersource — supporting bKash IPN, Visa/Mastercard, and bank EMI — processing <span class="text-offwhite font-medium">100+ transactions daily</span>.</li>
+          <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Directed an interactive GeoJSON-based mapping system for Bangladesh's divisions, districts, and upazilas, improving query performance by <span class="text-offwhite font-medium">85%</span>.</li>
+          <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Owned RESTful API design and load-balancing strategy for high-traffic systems, maintaining <span class="text-offwhite font-medium">~99% uptime</span>.</li>
+        </ul>
+      </div>
 
-            </div>
-        </div> <!-- end about-expertise -->
+      <!-- Job 2 -->
+      <div class="reveal relative mb-16">
+        <span class="timeline-dot absolute -left-8 md:-left-11 top-2 w-2.5 h-2.5 rounded-full bg-gold"></span>
+        <p class="eyebrow text-xs text-slategray mb-1">MAY 2024 — MAY 2025</p>
+        <h3 class="font-display text-2xl md:text-3xl mb-1">Full Stack Software Engineer</h3>
+        <p class="text-gold text-sm mb-6 font-mono">3DEVS IT LTD.</p>
+        <ul class="space-y-3 text-slategray text-[15px] leading-relaxed max-w-3xl">
+          <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Architected and maintained scalable Laravel applications, improving system performance for enterprise-level projects.</li>
+          <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Built and deployed Single Sign-On (SSO) authentication for the BRAC Migration Management and Information System.</li>
+          <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Engineered a full-text search engine, reducing average data-retrieval time across large datasets by <span class="text-offwhite font-medium">~90%</span>.</li>
+          <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Implemented automated invoice generation and post-payment email workflows, eliminating manual financial processing.</li>
+          <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Integrated AI tools (ChatGPT, GitHub Copilot) into daily workflow, shortening feature turnaround by <span class="text-offwhite font-medium">~60%</span> without compromising code quality.</li>
+        </ul>
+      </div>
 
+      <!-- Job 3 -->
+      <div class="reveal relative">
+        <span class="timeline-dot absolute -left-8 md:-left-11 top-2 w-2.5 h-2.5 rounded-full bg-gold"></span>
+        <p class="eyebrow text-xs text-slategray mb-1">MAY 2022 — MAY 2024</p>
+        <h3 class="font-display text-2xl md:text-3xl mb-1">Full Stack Software Engineer</h3>
+        <p class="text-gold text-sm mb-6 font-mono">DEVTECHGURU LTD.</p>
+        <ul class="space-y-3 text-slategray text-[15px] leading-relaxed max-w-3xl">
+          <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Engineered scalable software architecture for client systems including BRAC Frugal Innovation Forum and Brac Otithi, progressively owning system design decisions.</li>
+          <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Optimized relational database schemas (MySQL) for data integrity and query efficiency, improving response times by <span class="text-offwhite font-medium">~90%</span>.</li>
+          <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Implemented CI/CD pipelines (GitHub Actions, Docker) for automated testing and deployment.</li>
+          <li class="flex gap-3"><span class="text-gold shrink-0">▸</span>Delivered full-stack features for international clients (UNICEF, Asian University for Women, Harvard's Wyss Institute) using Laravel, MySQL, and Tailwind CSS.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="row about-timelines" data-animate-block="">
+<div class="max-w-6xl mx-auto px-6 md:px-10"><div class="hairline"></div></div>
 
-            <div class="column lg-6 tab-12">
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="px-6 md:px-10 py-24">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal mb-14">
+      <p class="eyebrow text-gold text-xs mb-3">02 — CAPABILITIES</p>
+      <h2 class="font-display text-4xl md:text-5xl">Skills &amp; Tooling</h2>
+    </div>
 
-                <h2 class="text-pretitle" data-animate-el="">
-                    Experience
-                </h2>
-
-                <div class="timeline" data-animate-el="">
-
-                    <div class="timeline__block">
-                        <div class="timeline__bullet"></div>
-                        <div class="timeline__header">
-                            <h4 class="timeline__title">3DEVs IT Ltd</h4>
-                            <h5 class="timeline__meta">Full Stack Software Engineer</h5>
-                            <p class="timeline__timeframe">May 2024 - Present</p>
-                        </div>
-                        <div class="timeline__desc">
-                            <ul>
-                                <li>Architected scalable applications to support project demands and enhance data performance.</li>
-                                <li>Analyzed and optimized system performance to ensure responsiveness.</li>
-                                <li>Utilized AI tools (ChatGPT, Copilot) to solve complex programming issues in minimal time.</li>
-                                <li>Led security protocol implementation and code reviews for industry-standard compliance.</li>
-                                <li>Designed scalable systems with effective load distribution.</li>
-                                <li>Utilized Git for version control with structured branching strategies.</li>
-                                <li>Handled manual deployment of web applications to Linux-based servers using FileZilla (SFTP) and MobaXterm for remote server access and updates.</li>
-                                <li>Drafted technical documentation and simplified complex concepts for team collaboration.</li>
-                                <li>Drafted technical documentation and user manuals to support system use and maintenance.</li>
-                                <li>Participated in client meetings and conducted training sessions to ensure effective onboarding and support.</li>
-                                <li>Developed and integrated RESTful APIs to enable seamless communication between front-end and back-end systems, ensuring optimal performance and scalability.</li>
-                                <li>Implemented SSO login feature for BRAC Migration.</li>
-                                <li>Developed full text search engine for fast searching in system.</li>
-                                <li>Developed and integrated payment systems including bKash IPN, Visa, and Mastercard to support e-commerce transactions.</li>
-                                <li>Automated invoice generation and email delivery post-payment, improving operational efficiency.</li>
-                                <li>Collaborated with the finance and QA teams to ensure payment accuracy, security, and compliance.</li>
-                                <li>Worked with GeoJSON polygon data to develop interactive maps of Bangladesh’s divisions, districts, and upazilas, enabling user-driven selection and visualization of hierarchical geographic data.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline__block">
-                        <div class="timeline__bullet"></div>
-                        <div class="timeline__header">
-                            <h4 class="timeline__title">DevTechGuru Limited</h4>
-                            <h5 class="timeline__meta">Software Engineer</h5>
-                            <p class="timeline__timeframe">May 2022 - May 2024</p>
-                        </div>
-                        <div class="timeline__desc">
-                            <ul>
-                                <li>Contributed to and eventually led scalable software solution architectures to meet project requirements.</li>
-                                <li>Assisted in optimizing database schemas for integrity and efficiency, later taking responsibility for schema refinement.</li>
-                                <li>Supported system design for scalability, with increasing responsibility over load balancing strategies.</li>
-                                <li>Collaborated in technical documentation creation, taking on lead documentation tasks for system architectures.</li>
-                                <li>Utilized Git for version control with structured branching strategies, gradually implementing more complex workflows.</li>
-                                <li>Participated in client meetings and training sessions to support project implementation.</li>
-                                <li>Learned and then implemented CI/CD pipelines for automated testing and deployment as part of the development process.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                </div> <!-- end timeline -->
-
-            </div> <!-- end column -->
-
-            <div class="column lg-6 tab-12">
-
-                <h2 class="text-pretitle" data-animate-el="">
-                    Education
-                </h2>
-
-                <div class="timeline" data-animate-el="">
-
-                    <div class="timeline__block">
-                        <div class="timeline__bullet"></div>
-                        <div class="timeline__header">
-                            <h4 class="timeline__title">American International University, Bangladesh (AIUB)</h4>
-                            <h5 class="timeline__meta">B.Sc. in Computer Science &amp; Engineering</h5>
-                            <p class="timeline__timeframe">2018 - 2022</p>
-                        </div>
-                        <div class="timeline__desc">
-                            <p>Studied at the School of Engineering, Technology and Science. Graduated with a CGPA of <strong>3.40</strong> on a 4.00 scale. AIUB is a private university in Dhaka, Bangladesh, established in 1994, offering diverse undergraduate and graduate programs across four faculties.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline__block">
-                        <div class="timeline__bullet"></div>
-                        <div class="timeline__header">
-                            <h4 class="timeline__title">Milestone College</h4>
-                            <h5 class="timeline__meta">Higher Secondary Certificate (HSC)</h5>
-                            <p class="timeline__timeframe">2015 - 2017</p>
-                        </div>
-                        <div class="timeline__desc">
-                            <p>Completed HSC with a GPA of <strong>4.75</strong> on a 5.00 scale. Milestone College is a Bengali and English-medium co-educational private school located in Uttara Model Town, Dhaka. It ranked 10th nationally in HSC exam results in 2014.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline__block">
-                        <div class="timeline__bullet"></div>
-                        <div class="timeline__header">
-                            <h4 class="timeline__title">Milestone College</h4>
-                            <h5 class="timeline__meta">Secondary School Certificate (SSC)</h5>
-                            <p class="timeline__timeframe">2013 - 2015</p>
-                        </div>
-                        <div class="timeline__desc">
-                            <p>Graduated with a perfect GPA of <strong>5.00</strong> on a 5.00 scale. Milestone College is a well-regarded educational institution in Uttara, Dhaka, offering both Bengali and English-medium instruction.</p>
-                        </div>
-                    </div>
-
-                </div> <!-- end timeline -->
-
-            </div> <!-- end column -->
-
-
-        </div> <!-- end about-timelines -->
-
-    </section> <!-- end s-about -->
-
-    <style>
-        .service-item__icon i {
-            font-size: 10rem;
-            color: #eabe7b;
-        }
-
-        .service-item__text:hover h3 {
-            color: #d9a452;
-            transform: scale(1.1);
-            transition: all 0.3s ease;
-        }
-    </style>
-    <!-- ### services
-            ================================================== -->
-    <section id="services" class="s-services target-section">
-
-        <div class="row services-content wide">
-
-            <div class="column lg-12" data-animate-block>
-                <h2 class="text-pretitle" data-animate-el>What I Offer</h2>
-                <p class="h1" data-animate-el="">Here are some of the services I offer to help you with your projects.</p>
-
-                <div class="row block-lg-one-third block-md-one-half block-stack-on-700 services-list">
-                    <div class="column" data-animate-el>
-                        <div class="service-item">
-                            <div class="service-item__icon">
-                                <i class="fas fa-laptop-code"></i>
-                            </div>
-                            <div class="service-item__text">
-                                <h3>Web Development</h3>
-                                <p>From single-page applications to large-scale enterprise systems, I build robust and scalable web solutions.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column" data-animate-el>
-                        <div class="service-item">
-                            <div class="service-item__icon">
-                                <i class="fas fa-mobile-alt"></i>
-                            </div>
-                            <div class="service-item__text">
-                                <h3>Responsive Design</h3>
-                                <p>I create websites that look great on all devices, ensuring a seamless user experience.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column" data-animate-el>
-                        <div class="service-item">
-                            <div class="service-item__icon">
-                                <i class="fas fa-server"></i>
-                            </div>
-                            <div class="service-item__text">
-                                <h3>Backend Development</h3>
-                                <p>I design and build powerful APIs and backend systems to drive your applications.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column" data-animate-el>
-                        <div class="service-item">
-                            <div class="service-item__icon">
-                                <i class="fas fa-cloud"></i>
-                            </div>
-                            <div class="service-item__text">
-                                <h3>Cloud & DevOps</h3>
-                                <p>I can help you deploy and manage your applications in the cloud with CI/CD pipelines.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column" data-animate-el>
-                        <div class="service-item">
-                            <div class="service-item__icon">
-                                <i class="fas fa-brain"></i>
-                            </div>
-                            <div class="service-item__text">
-                                <h3>AI Integration</h3>
-                                <p>I can integrate AI-powered features into your applications to make them smarter.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column" data-animate-el>
-                        <div class="service-item">
-                            <div class="service-item__icon">
-                                <i class="fas fa-database"></i>
-                            </div>
-                            <div class="service-item__text">
-                                <h3>Database Design</h3>
-                                <p>I design and optimize database schemas for performance, scalability, and data integrity.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="reveal">
+        <p class="eyebrow text-xs text-gold mb-4">LANGUAGES &amp; FRAMEWORKS</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">PHP</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">JavaScript</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">Laravel</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">Next.js</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">React</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">Vue.js</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">Tailwind</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">Bootstrap 5</span>
         </div>
+      </div>
 
-    </section>
+      <div class="reveal">
+        <p class="eyebrow text-xs text-gold mb-4">AI-AUGMENTED DEV</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">Cursor</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">Claude Code</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">Antigravity CLI</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">GitHub Copilot</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">ChatGPT</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">Gemini</span>
+        </div>
+      </div>
 
+      <div class="reveal">
+        <p class="eyebrow text-xs text-gold mb-4">DATABASE &amp; ARCHITECTURE</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">MySQL</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">MariaDB</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">REST APIs</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">MVC</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">Query Optimization</span>
+        </div>
+      </div>
 
-    <!-- ### works
-            ================================================== -->
-    <section id="works" class="s-works target-section">
+      <div class="reveal">
+        <p class="eyebrow text-xs text-gold mb-4">PAYMENTS &amp; INTEGRATIONS</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">bKash IPN</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">Cybersource</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">PortPOS</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">EMI Workflows</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">SSO</span>
+        </div>
+      </div>
 
+      <div class="reveal md:col-span-2">
+        <p class="eyebrow text-xs text-gold mb-4">DEVOPS &amp; TOOLING</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">Git / GitHub</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">Docker</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">GitHub Actions</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">FileZilla</span>
+          <span class="skill-chip border border-white/10 rounded-full px-4 py-2 text-sm text-offwhite">MobaXterm</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="row works-portfolio">
+<div class="max-w-6xl mx-auto px-6 md:px-10"><div class="hairline"></div></div>
 
-            <div class="column lg-12" data-animate-block="">
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="px-6 md:px-10 py-24">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal mb-14">
+      <p class="eyebrow text-gold text-xs mb-3">03 — SELECTED WORK</p>
+      <h2 class="font-display text-4xl md:text-5xl">Key Projects</h2>
+    </div>
 
-                <h2 class="text-pretitle" data-animate-el="">
-                    Recent Works
-                </h2>
-                <p class="h1" data-animate-el="">
-                    Here are a few recent projects I've really enjoyed working on—take a look!
-                </p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                <ul class="folio-list row block-lg-one-half block-stack-on-1000">
+      <div class="reveal card-hover rounded-xl border border-white/10 bg-panel overflow-hidden">
+        <img src="assets/images/project-placeholder.jpg" alt="AUW Laboratory School Web App" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="font-display text-lg mb-1">AUW Laboratory School Web App</h3>
+          <p class="text-xs text-gold font-mono mb-3">Laravel · Tailwind · MySQL</p>
+          <p class="text-sm text-slategray leading-relaxed">School CMS website featuring an admin panel for dynamic content management.</p>
+        </div>
+      </div>
 
-                    <li class="folio-list__item column" data-animate-el="">
-                        <a class="folio-list__item-link" href="#modal-01">
-                            <div class="folio-list__item-pic">
-                                <img data-src="images/portfolio/portfolio-15.png" alt="" class="lazyload">
-                            </div>
+      <div class="reveal card-hover rounded-xl border border-white/10 bg-panel overflow-hidden">
+        <img src="assets/images/project-placeholder.jpg" alt="Brac Frugal Innovation Forum" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="font-display text-lg mb-1">Brac Frugal Innovation Forum</h3>
+          <p class="text-xs text-gold font-mono mb-3">Laravel · Tailwind · MySQL</p>
+          <p class="text-sm text-slategray leading-relaxed">Annual innovation event platform with speaker registration and integrated PortPOS payment system.</p>
+        </div>
+      </div>
 
-                            <div class="folio-list__item-text">
-                                <div class="folio-list__item-cat">
-                                    Web Application with CMS
-                                </div>
-                                <div class="folio-list__item-title">
-                                    BRAC Frugal Innovation Forum.
-                                </div>
-                            </div>
-                        </a>
-                        <a class="folio-list__proj-link" target="_blank" href="https://innovation.brac.net/fif2025/" title="project link">
-                            <svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                    </li> <!--end folio-list__item -->
+      <div class="reveal card-hover rounded-xl border border-white/10 bg-panel overflow-hidden">
+        <img src="assets/images/project-placeholder.jpg" alt="Brac Social Innovation Lab" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="font-display text-lg mb-1">Brac Social Innovation Lab</h3>
+          <p class="text-xs text-gold font-mono mb-3">PHP · Tailwind · Bootstrap</p>
+          <p class="text-sm text-slategray leading-relaxed">Platform for showcasing BRAC's social innovation initiatives and new ideas for social welfare.</p>
+        </div>
+      </div>
 
-                    <li class="folio-list__item column" data-animate-el="">
-                        <a class="folio-list__item-link" href="#modal-02">
-                            <div class="folio-list__item-pic">
-                                <img data-src="images/portfolio/portfolio-14.png" alt="" class="lazyload">
-                            </div>
+      <div class="reveal card-hover rounded-xl border border-white/10 bg-panel overflow-hidden">
+        <img src="assets/images/project-placeholder.jpg" alt="Brac Otithi Web App" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="font-display text-lg mb-1">Brac Otithi Web App</h3>
+          <p class="text-xs text-gold font-mono mb-3">Laravel · Tailwind · MySQL</p>
+          <p class="text-sm text-slategray leading-relaxed">Tour booking e-commerce platform supporting multiple packages per city with integrated Cybersource and PortPOS payment gateways.</p>
+        </div>
+      </div>
 
-                            <div class="folio-list__item-text">
-                                <div class="folio-list__item-cat">
-                                    Web Application with CMS
-                                </div>
-                                <div class="folio-list__item-title">
-                                    Unicef BD Wash Data.
-                                </div>
-                            </div>
-                        </a>
-                        <a class="folio-list__proj-link" target="_blank" href="https://bdwashdata.com/" title="project link">
-                            <svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                    </li> <!--end folio-list__item -->
+      <div class="reveal card-hover rounded-xl border border-white/10 bg-panel overflow-hidden">
+        <img src="assets/images/project-placeholder.jpg" alt="BRAC Migration Management" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="font-display text-lg mb-1">BRAC Migration Management</h3>
+          <p class="text-xs text-gold font-mono mb-3">PHP · MariaDB · Bootstrap</p>
+          <p class="text-sm text-slategray leading-relaxed">Complex RBAC-based system for managing immigrant data, financial support tracking, and reporting.</p>
+        </div>
+      </div>
 
-                    <li class="folio-list__item column" data-animate-el="">
-                        <a class="folio-list__item-link" href="#modal-03">
-                            <div class="folio-list__item-pic">
-                                <img data-src="images/portfolio/portfolio-16.png" alt="" class="lazyload">
-                            </div>
+      <div class="reveal card-hover rounded-xl border border-white/10 bg-panel overflow-hidden">
+        <img src="assets/images/project-placeholder.jpg" alt="UNICEF BD Washdata" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="font-display text-lg mb-1">UNICEF BD Washdata</h3>
+          <p class="text-xs text-gold font-mono mb-3">PHP · MariaDB · Bootstrap</p>
+          <p class="text-sm text-slategray leading-relaxed">Arsenic detection system with facility tracking; maps arsenic levels and sanitation data using GeoJSON.</p>
+        </div>
+      </div>
 
-                            <div class="folio-list__item-text">
-                                <div class="folio-list__item-cat">
-                                    Web Application with CMS
-                                </div>
-                                <div class="folio-list__item-title">
-                                    BRAC Otithi.
-                                </div>
-                            </div>
-                        </a>
-                        <a class="folio-list__proj-link" target="_blank" href="https://otithi.brac.net/" title="project link">
-                            <svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                    </li> <!--end folio-list__item -->
+      <div class="reveal card-hover rounded-xl border border-white/10 bg-panel overflow-hidden">
+        <img src="assets/images/project-placeholder.jpg" alt="AUW Laboratory School MIS" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="font-display text-lg mb-1">AUW Laboratory School MIS</h3>
+          <p class="text-xs text-gold font-mono mb-3">Laravel · Tailwind · MySQL</p>
+          <p class="text-sm text-slategray leading-relaxed">Full-scale Management Information System for student records, fees, exams, and staff scheduling.</p>
+        </div>
+      </div>
 
-                    <li class="folio-list__item column" data-animate-el="">
-                        <a class="folio-list__item-link" href="#modal-04">
-                            <div class="folio-list__item-pic">
-                                <img data-src="images/portfolio/portfolio-13.png" alt="" class="lazyload">
-                            </div>
+      <div class="reveal card-hover rounded-xl border border-white/10 bg-panel overflow-hidden">
+        <img src="assets/images/project-placeholder.jpg" alt="LIMS — Wyss Institute" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="font-display text-lg mb-1">LIMS — Wyss Institute</h3>
+          <p class="text-xs text-gold font-mono mb-3">Laravel · Tailwind · MySQL</p>
+          <p class="text-sm text-slategray leading-relaxed">Harvard laboratory management system for instrument data entry and image capture.</p>
+        </div>
+      </div>
 
-                            <div class="folio-list__item-text">
-                                <div class="folio-list__item-cat">
-                                    Management Information System
-                                </div>
-                                <div class="folio-list__item-title">
-                                    Unicef BD Wash Admin Panel.
-                                </div>
-                            </div>
-                        </a>
-                        <a class="folio-list__proj-link" target="_blank" href="https://bdwashdata.com/wash_admin" title="project link">
-                            <svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                    </li> <!--end folio-list__item -->
+      <div class="reveal card-hover rounded-xl border border-white/10 bg-panel overflow-hidden">
+        <img src="assets/images/project-placeholder.jpg" alt="ERP Three Arrows Plastic" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="font-display text-lg mb-1">ERP Three Arrows Plastic</h3>
+          <p class="text-xs text-gold font-mono mb-3">PHP · MariaDB · Bootstrap</p>
+          <p class="text-sm text-slategray leading-relaxed">Comprehensive ERP solution with multilevel RBAC, payroll, and HR management modules.</p>
+        </div>
+      </div>
 
-                    <li class="folio-list__item column" data-animate-el="">
-                        <a class="folio-list__item-link" href="#modal-05">
-                            <div class="folio-list__item-pic">
-                                <img data-src="images/portfolio/portfolio-17.png" alt="" class="lazyload">
-                            </div>
+      <div class="reveal card-hover rounded-xl border border-white/10 bg-panel overflow-hidden">
+        <img src="assets/images/project-placeholder.jpg" alt="ERP Al-Rukan Technologies" class="w-full h-40 object-cover">
+        <div class="p-6">
+          <h3 class="font-display text-lg mb-1">ERP Al-Rukan Technologies</h3>
+          <p class="text-xs text-gold font-mono mb-3">PHP · MariaDB · Bootstrap</p>
+          <p class="text-sm text-slategray leading-relaxed">Comprehensive ERP solution with multilevel RBAC, payroll, and HR management modules.</p>
+        </div>
+      </div>
 
-                            <div class="folio-list__item-text">
-                                <div class="folio-list__item-cat">
-                                    Web Application with CMS
-                                </div>
-                                <div class="folio-list__item-title">
-                                    Asian Woman Laboratory School.
-                                </div>
-                            </div>
-                        </a>
-                        <a class="folio-list__proj-link" target="_blank" href="https://labschool.auw.edu.bd/" title="project link">
-                            <svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                    </li> <!--end folio-list__item -->
+    </div>
+  </div>
+</section>
 
-                    <li class="folio-list__item column" data-animate-el="">
-                        <a class="folio-list__item-link" href="#modal-06">
-                            <div class="folio-list__item-pic">
-                                <img data-src="images/portfolio/portfolio-5.png" alt="" class="lazyload">
-                            </div>
+<div class="max-w-6xl mx-auto px-6 md:px-10"><div class="hairline"></div></div>
 
-                            <div class="folio-list__item-text">
-                                <div class="folio-list__item-cat">
-                                    Website
-                                </div>
-                                <div class="folio-list__item-title">
-                                    Webloom.
-                                </div>
-                            </div>
-                        </a>
-                        <a class="folio-list__proj-link" target="_blank" href="https://webloomst.net/" title="project link">
-                            <svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                    </li> <!--end folio-list__item -->
-                    <li class="folio-list__item column" data-animate-el="">
-                        <a class="folio-list__item-link" href="#modal-07">
-                            <div class="folio-list__item-pic">
-                                <img data-src="images/portfolio/portfolio-12.png" alt="" class="lazyload">
-                            </div>
+<!-- ================= EDUCATION / CERTS ================= -->
+<section id="education" class="px-6 md:px-10 py-24">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-14">
 
-                            <div class="folio-list__item-text">
-                                <div class="folio-list__item-cat">
-                                    Management Information System
-                                </div>
-                                <div class="folio-list__item-title">
-                                    Brac Migration MIS.
-                                </div>
-                            </div>
-                        </a>
-                        <a class="folio-list__proj-link" target="_blank" href="https://migrationmis.brac.net/" title="project link">
-                            <svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                    </li> <!--end folio-list__item -->
-                    <li class="folio-list__item column" data-animate-el="">
-                        <a class="folio-list__item-link" href="#modal-08">
-                            <div class="folio-list__item-pic">
-                                <img data-src="images/portfolio/portfolio-18.png" alt="" class="lazyload">
-                            </div>
+    <div class="reveal">
+      <p class="eyebrow text-gold text-xs mb-3">04 — EDUCATION</p>
+      <h2 class="font-display text-3xl md:text-4xl mb-10">Academic Background</h2>
 
-                            <div class="folio-list__item-text">
-                                <div class="folio-list__item-cat">
-                                    School Management System
-                                </div>
-                                <div class="folio-list__item-title">
-                                    Asian Woman Laboratory School Management System.
-                                </div>
-                            </div>
-                        </a>
-                        <a class="folio-list__proj-link" href="https://labmis.auw.edu.bd/" target="_blank" title="project link">
-                            <svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                    </li> <!--end folio-list__item -->
+      <div class="space-y-8">
+        <div class="border-l-2 border-gold/40 pl-6">
+          <p class="font-display text-xl">American International University-Bangladesh</p>
+          <p class="text-slategray text-sm mt-1">B.Sc. in Computer Science &amp; Engineering — 2018–2022</p>
+          <p class="text-gold text-sm mt-1 font-mono">CGPA 3.40</p>
+        </div>
+        <div class="border-l-2 border-white/10 pl-6">
+          <p class="font-display text-xl">Milestone College</p>
+          <p class="text-slategray text-sm mt-1">H.S.C 2017 — GPA 4.75</p>
+          <p class="text-slategray text-sm">S.S.C 2015 — GPA 5.00</p>
+        </div>
+      </div>
+    </div>
 
-                </ul> <!-- end folio-list -->
+    <div class="reveal">
+      <p class="eyebrow text-gold text-xs mb-3">05 — CERTIFICATIONS</p>
+      <h2 class="font-display text-3xl md:text-4xl mb-10">Credentials</h2>
+      <div class="border border-white/10 rounded-xl p-6 bg-panel">
+        <p class="font-display text-lg">Laravel 9.0 Essential Training</p>
+        <p class="text-slategray text-sm mt-1">LinkedIn Learning — June 2023</p>
+      </div>
 
-            </div> <!-- end column -->
+      <p class="eyebrow text-gold text-xs mb-3 mt-12">QUICK FACTS</p>
+      <div class="grid grid-cols-3 gap-3 text-center">
+        <div class="border border-white/10 rounded-xl p-4 bg-panel">
+          <p class="text-xs text-slategray mb-1">Editor</p>
+          <p class="text-sm text-offwhite font-mono">VS Code</p>
+        </div>
+        <div class="border border-white/10 rounded-xl p-4 bg-panel">
+          <p class="text-xs text-slategray mb-1">SQL Tool</p>
+          <p class="text-sm text-offwhite font-mono">SQLyog</p>
+        </div>
+        <div class="border border-white/10 rounded-xl p-4 bg-panel">
+          <p class="text-xs text-slategray mb-1">Deploy</p>
+          <p class="text-sm text-offwhite font-mono">MobaXterm</p>
+        </div>
+      </div>
+    </div>
 
+  </div>
+</section>
 
-            <!-- Modal Templates Popup
-                    -------------------------------------------- -->
-            <div id="modal-01" hidden="">
-                <div class="modal-popup">
-                    <img data-src="images/portfolio/gallery/g-portfolio-15.png" alt="" class="lazyload">
+<div class="max-w-6xl mx-auto px-6 md:px-10"><div class="hairline"></div></div>
 
-                    <div class="modal-popup__desc">
-                        <h5>Frugal Innovation Forum</h5>
-                        <p>
-                            A custom-built registration platform for the FIF 2025 conference, featuring user package selection, Portpos payment integration, and an admin panel with CMS functionality.
-                        </p>
-                        <ul class="modal-popup__cat">
-                            <li>Web Application</li>
-                            <li>With CMS</li>
-                        </ul>
-                    </div>
+<!-- ================= REFERENCES ================= -->
+<section class="px-6 md:px-10 py-24">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal mb-14">
+      <p class="eyebrow text-gold text-xs mb-3">06 — REFERENCES</p>
+      <h2 class="font-display text-4xl md:text-5xl">Endorsements</h2>
+    </div>
+    <div class="grid sm:grid-cols-3 gap-6">
+      <div class="reveal card-hover border border-white/10 rounded-xl p-6 bg-panel">
+        <p class="font-display text-lg">Mahmood Ahsan</p>
+        <p class="text-slategray text-sm mt-1">BDM, 3DEVS</p>
+        <p class="text-gold text-sm mt-2 font-mono">01942844321</p>
+      </div>
+      <div class="reveal card-hover border border-white/10 rounded-xl p-6 bg-panel">
+        <p class="font-display text-lg">Tausif Hossain</p>
+        <p class="text-slategray text-sm mt-1">Tech Lead, DevTechGuru</p>
+        <p class="text-gold text-sm mt-2 font-mono">01748181448</p>
+      </div>
+      <div class="reveal card-hover border border-white/10 rounded-xl p-6 bg-panel">
+        <p class="font-display text-lg">Abhijit Bhowmik</p>
+        <p class="text-slategray text-sm mt-1">Professor, AIUB</p>
+        <p class="text-gold text-sm mt-2 font-mono">Available on request</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-                    <a href="https://innovation.brac.net/fif2025/" target="_blank" class="modal-popup__details">Project link</a>
-                </div>
-            </div> <!-- end modal -->
+<!-- ================= CONTACT / FOOTER ================= -->
+<footer id="contact" class="px-6 md:px-10 py-24 border-t border-white/5 mt-10">
+  <div class="reveal max-w-6xl mx-auto text-center">
+    <p class="eyebrow text-gold text-xs mb-4">LET'S BUILD SOMETHING</p>
+    <h2 class="font-display text-4xl md:text-6xl mb-8">Get In Touch</h2>
+    <div class="flex flex-wrap justify-center gap-x-10 gap-y-4 text-slategray font-mono text-sm mb-10">
+      <a href="mailto:asafwan72@gmail.com" class="hover:text-gold transition-colors">asafwan72@gmail.com</a>
+      <span class="text-gold/30">·</span>
+      <a href="tel:+8801706642926" class="hover:text-gold transition-colors">+8801706642926</a>
+      <span class="text-gold/30">·</span>
+      <span>Sector-7, Uttara, Dhaka</span>
+    </div>
+    <div class="flex justify-center gap-6 text-sm eyebrow">
+      <a href="#" class="border border-white/15 rounded-full px-6 py-2 hover:border-gold hover:text-gold transition-colors">LINKEDIN</a>
+      <a href="#" class="border border-white/15 rounded-full px-6 py-2 hover:border-gold hover:text-gold transition-colors">GITHUB</a>
+      <a href="#" class="border border-white/15 rounded-full px-6 py-2 hover:border-gold hover:text-gold transition-colors">PORTFOLIO</a>
+    </div>
+    <p class="text-xs text-slategray/60 mt-16 font-mono">© 2026 SM. Arhab Safwan — Crafted with intent.</p>
+  </div>
+</footer>
 
-            <div id="modal-02" hidden="">
-                <div class="modal-popup">
-                    <img data-src="images/portfolio/gallery/g-portfolio-14.png" alt="" class="lazyload">
+<script>
+  $(function () {
+    // Scroll-reveal
+    const revealEls = $('.reveal');
+    function checkReveal() {
+      const windowBottom = $(window).scrollTop() + $(window).height();
+      revealEls.each(function () {
+        const el = $(this);
+        if (!el.hasClass('in-view')) {
+          const elTop = el.offset().top + 60;
+          if (windowBottom > elTop) {
+            el.addClass('in-view');
+          }
+        }
+      });
+    }
+    checkReveal();
+    $(window).on('scroll resize', checkReveal);
 
-                    <div class="modal-popup__desc">
-                        <h5>Unicef BD Wash Data</h5>
-                        <p>
-                            A data-driven web platform built for UNICEF to monitor WASH (Water, Sanitation, and Hygiene) indicators across Bangladesh, featuring interactive dashboards and a full CMS for data management.
-                        </p>
-                        <ul class="modal-popup__cat">
-                            <li>Web Application</li>
-                            <li>With CMS</li>
-                        </ul>
-                    </div>
+    // Smooth nav highlight not required; simple anchor scroll already via CSS scroll-behavior
+  });
+</script>
 
-                    <a href="https://bdwashdata.com/" target="_blank" class="modal-popup__details">Project link</a>
-                </div>
-            </div> <!-- end modal -->
-
-            <div id="modal-03" hidden="">
-                <div class="modal-popup">
-                    <img data-src="images/portfolio/gallery/g-portfolio-16.png" alt="" class="lazyload">
-
-                    <div class="modal-popup__desc">
-                        <h5>BRAC Otithi</h5>
-                        <p>
-                            A tourism-focused web platform where international and local visitors can explore and purchase curated travel packages across Bangladesh, complete with payment integration and CMS support.
-                        </p>
-                        <ul class="modal-popup__cat">
-                            <li>Web Application</li>
-                            <li>With CMS</li>
-                        </ul>
-                    </div>
-
-                    <a href="https://otithi.brac.net/" target="_blank" class="modal-popup__details">Project link</a>
-                </div>
-            </div> <!-- end modal -->
-
-            <div id="modal-04" hidden="">
-                <div class="modal-popup">
-                    <img data-src="images/portfolio/gallery/g-portfolio-13.png" alt="" class="lazyload">
-
-                    <div class="modal-popup__desc">
-                        <h5>Unicef BD Wash Admin Panel</h5>
-                        <p>
-                            A robust admin dashboard for managing nationwide WASH data, featuring warehouse oversight, facility data collection, user role assignment, and real-time analytics across Bangladesh.
-                        </p>
-                        <ul class="modal-popup__cat">
-                            <li>Management Information System</li>
-                        </ul>
-                    </div>
-
-                    <a href="https://bdwashdata.com/wash_admin" target="_blank" class="modal-popup__details">Project link</a>
-                </div>
-            </div> <!-- end modal -->
-
-            <div id="modal-05" hidden="">
-                <div class="modal-popup">
-
-                    <img data-src="images/portfolio/gallery/g-portfolio-17.png" alt="" class="lazyload">
-
-                    <div class="modal-popup__desc">
-                        <h5>Asian Woman Laboratory</h5>
-                        <p>
-                            A collaborative online platform designed to empower Asian women in STEM fields through resources, mentorship, and community engagement.
-                        </p>
-                        <ul class="modal-popup__cat">
-                            <li>Content Management System</li>
-                        </ul>
-                    </div>
-
-                    <a href="https://labschool.auw.edu.bd/" target="_blank" class="modal-popup__details">Project link</a>
-                </div>
-            </div> <!-- end modal -->
-
-            <div id="modal-06" hidden="">
-                <div class="modal-popup">
-                    <img data-src="images/portfolio/gallery/g-portfolio-5.png" alt="" class="lazyload">
-
-                    <div class="modal-popup__desc">
-                        <h5>Webloom</h5>
-                        <p>
-                            A digital agency platform aimed to create stunning websites and digital experiences.
-                        </p>
-                        <ul class="modal-popup__cat">
-                            <li>Website</li>
-                        </ul>
-                    </div>
-
-                    <a href="https://webloomst.net/" target="_blank" class="modal-popup__details">Project link</a>
-                </div>
-            </div> <!-- end modal -->
-            <div id="modal-07" hidden="">
-                <div class="modal-popup">
-                    <img data-src="images/portfolio/gallery/g-portfolio-12.png" alt="" class="lazyload">
-
-                    <div class="modal-popup__desc">
-                        <h5>BRAC Migration MIS</h5>
-                        <p>A comprehensive management information system designed to streamline the migration process and enhance data-driven decision-making for returning emigrants.</p>
-                        <ul class="modal-popup__cat">
-                            <li>Management Information System</li>
-                        </ul>
-                    </div>
-
-                    <a href="https://migrationmis.brac.net/" target="_blank" class="modal-popup__details">Project link</a>
-                </div>
-            </div> <!-- end modal -->
-            <div id="modal-08" hidden="">
-                <div class="modal-popup">
-                    <img src="images/portfolio/gallery/g-portfolio-18.png" alt="">
-
-                    <div class="modal-popup__desc">
-                        <h5>Asian Woman Laboratory School Management System</h5>
-                        <p>A comprehensive school management system designed to support the unique needs of Asian women in education.</p>
-                        <ul class="modal-popup__cat">
-                            <li>Management Information System</li>
-                        </ul>
-                    </div>
-
-                    <a href="https://labmis.auw.edu.bd/" target="_blank" class="modal-popup__details">Project link</a>
-                </div>
-            </div> <!-- end modal -->
-
-        </div> <!-- end works-portfolio -->
-
-    </section> <!-- end s-works -->
-
-
-    <!-- ### contact
-            ================================================== -->
-    <section id="contact" class="s-contact target-section">
-
-        <div class="row contact-top">
-            <div class="column lg-12">
-                <h2 class="text-pretitle">
-                    Get In Touch
-                </h2>
-
-                <p class="h1">
-                    I’d love to hear from you! Whether you have a question or just want to talk about design, tech, or business — feel free to drop me a message.
-                </p>
-            </div>
-        </div> <!-- end contact-top -->
-
-        <div class="row contact-bottom">
-            <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
-                <h3 class="text-pretitle">Reach me at</h3>
-                <p class="contact-links">
-                    <a href="asafwan72@gmail.com" class="mailtoui">asafwan72@gmail.com</a> <br>
-                    <a href="tel:+1975432345">+88 017 066 42926</a>
-                </p>
-                            </div>
-            <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
-                <h3 class="text-pretitle">Social</h3>
-                <ul class="contact-social">
-                    <li><a href="https://github.com/ArhabSafwan" target="_blank">Github</a></li>
-                    <li><a href="https://www.linkedin.com/in/arhab-safwan-b68a1317b/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://x.com/ArhabSafwan" target="_blank">Twitter</a></li>
-                    <li><a href="https://www.facebook.com/arhab.rab" target="_blank">Facebook</a></li>
-                </ul>
-                        </div>
-            <div class="column lg-4 md-12 contact-block">
-                <a href="mailto:asafwan72@gmail.com" class="mailtoui btn btn--medium u-fullwidth contact-btn">Say Hello.</a>
-            </div>
-        </div> <!-- end contact-bottom -->
-
-    </section> <!-- end contact -->
-
-</main> <!-- end s-content -->
-
-<?php include 'layout/footer.php'; ?>
+</body>
+</html>
