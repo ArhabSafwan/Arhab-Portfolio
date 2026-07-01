@@ -20,11 +20,7 @@
                 <a href="#experience" class="eyebrow text-xs border border-white/15 text-offwhite px-6 py-3 rounded-full hover:border-gold hover:text-gold transition-colors">EXPERIENCE ↓</a>
             </div>
             <div class="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-slategray font-mono">
-                <span>Sector-7, Uttara, Dhaka</span>
-                <span class="text-gold/40">·</span>
-                <span>+8801706642926</span>
-                <span class="text-gold/40">·</span>
-                <span>asafwan72@gmail.com</span>
+                <span>Dhaka, Bangladesh</span>
             </div>
         </div>
 
