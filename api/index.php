@@ -15,7 +15,7 @@
                 Early adopter of AI-augmented development, compressing sprint timelines without compromising
                 architecture.
             </p>
-            <div class="mt-10 flex flex-wrap gap-4">
+            <div class="mt-10 flex flex-wrap gap-4 hero-buttons">
                 <a href="#contact" class="eyebrow text-xs bg-gold text-obsidian px-6 py-3 rounded-full hover:bg-goldbright transition-colors">VIEW CONTACT</a>
                 <a href="#experience" class="eyebrow text-xs border border-white/15 text-offwhite px-6 py-3 rounded-full hover:border-gold hover:text-gold transition-colors">EXPERIENCE ↓</a>
             </div>
