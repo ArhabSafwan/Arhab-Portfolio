@@ -30,7 +30,7 @@
 
         <div class="reveal justify-self-center">
             <div class="frame-glow w-52 h-52 md:w-64 md:h-64 rounded-full">
-                <img src="images/about-photo.jpg" alt="SM. Arhab Safwan" class="w-52 h-52 md:w-64 md:h-64 object-cover rounded-full border-4 border-obsidian relative z-10">
+                <img src="/images/about-photo.jpg" alt="SM. Arhab Safwan" class="w-52 h-52 md:w-64 md:h-64 object-cover rounded-full border-4 border-obsidian relative z-10">
             </div>
         </div>
     </div>
@@ -222,7 +222,7 @@
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
             <div class="reveal card-hover rounded-xl border border-white/10 bg-panel overflow-hidden">
-                <img src="images/portfolio/portfolio-1.png" alt="AUW Laboratory School Web App" class="w-full h-40 object-cover">
+                <img src="/images/portfolio/portfolio-17.png" alt="AUW Laboratory School Web App" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h3 class="font-display text-lg mb-1">AUW Laboratory School Web App</h3>
                     <p class="text-xs text-gold font-mono mb-3">Laravel · Tailwind · MySQL</p>
@@ -231,7 +231,7 @@
             </div>
 
             <div class="reveal card-hover rounded-xl border border-white/10 bg-panel overflow-hidden">
-                <img src="images/portfolio/portfolio-2.png" alt="Brac Frugal Innovation Forum" class="w-full h-40 object-cover">
+                <img src="/images/portfolio/portfolio-15.png" alt="Brac Frugal Innovation Forum" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h3 class="font-display text-lg mb-1">Brac Frugal Innovation Forum</h3>
                     <p class="text-xs text-gold font-mono mb-3">Laravel · Tailwind · MySQL</p>
@@ -240,7 +240,7 @@
             </div>
 
             <div class="reveal card-hover rounded-xl border border-white/10 bg-panel overflow-hidden">
-                <img src="images/portfolio/portfolio-4.png" alt="Brac Social Innovation Lab" class="w-full h-40 object-cover">
+                <img src="/images/portfolio/brac_inno.png" alt="Brac Social Innovation Lab" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h3 class="font-display text-lg mb-1">Brac Social Innovation Lab</h3>
                     <p class="text-xs text-gold font-mono mb-3">PHP · Tailwind · Bootstrap</p>
@@ -249,7 +249,7 @@
             </div>
 
             <div class="reveal card-hover rounded-xl border border-white/10 bg-panel overflow-hidden">
-                <img src="images/portfolio/portfolio-5.png" alt="Brac Otithi Web App" class="w-full h-40 object-cover">
+                <img src="/images/portfolio/portfolio-16.png" alt="Brac Otithi Web App" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h3 class="font-display text-lg mb-1">Brac Otithi Web App</h3>
                     <p class="text-xs text-gold font-mono mb-3">Laravel · Tailwind · MySQL</p>
@@ -258,7 +258,7 @@
             </div>
 
             <div class="reveal card-hover rounded-xl border border-white/10 bg-panel overflow-hidden">
-                <img src="images/portfolio/portfolio-6.png" alt="BRAC Migration Management" class="w-full h-40 object-cover">
+                <img src="/images/portfolio/portfolio-12.png" alt="BRAC Migration Management" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h3 class="font-display text-lg mb-1">BRAC Migration Management</h3>
                     <p class="text-xs text-gold font-mono mb-3">PHP · MariaDB · Bootstrap</p>
@@ -267,7 +267,7 @@
             </div>
 
             <div class="reveal card-hover rounded-xl border border-white/10 bg-panel overflow-hidden">
-                <img src="images/portfolio/portfolio-12.png" alt="UNICEF BD Washdata" class="w-full h-40 object-cover">
+                <img src="/images/portfolio/portfolio-14.png" alt="UNICEF BD Washdata" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h3 class="font-display text-lg mb-1">UNICEF BD Washdata</h3>
                     <p class="text-xs text-gold font-mono mb-3">PHP · MariaDB · Bootstrap</p>
@@ -276,7 +276,7 @@
             </div>
 
             <div class="reveal card-hover rounded-xl border border-white/10 bg-panel overflow-hidden">
-                <img src="images/portfolio/portfolio-13.png" alt="AUW Laboratory School MIS" class="w-full h-40 object-cover">
+                <img src="/images/portfolio/portfolio-18.png" alt="AUW Laboratory School MIS" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h3 class="font-display text-lg mb-1">AUW Laboratory School MIS</h3>
                     <p class="text-xs text-gold font-mono mb-3">Laravel · Tailwind · MySQL</p>
@@ -285,7 +285,7 @@
             </div>
 
             <div class="reveal card-hover rounded-xl border border-white/10 bg-panel overflow-hidden">
-                <img src="images/portfolio/portfolio-14.png" alt="LIMS — Wyss Institute" class="w-full h-40 object-cover">
+                <img src="/images/portfolio/portfolio-1.png" alt="LIMS — Wyss Institute" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h3 class="font-display text-lg mb-1">LIMS — Wyss Institute</h3>
                     <p class="text-xs text-gold font-mono mb-3">Laravel · Tailwind · MySQL</p>
@@ -294,7 +294,7 @@
             </div>
 
             <div class="reveal card-hover rounded-xl border border-white/10 bg-panel overflow-hidden">
-                <img src="images/portfolio/portfolio-15.png" alt="ERP Three Arrows Plastic" class="w-full h-40 object-cover">
+                <img src="/images/portfolio/portfolio-2.png" alt="ERP Three Arrows Plastic" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h3 class="font-display text-lg mb-1">ERP Three Arrows Plastic</h3>
                     <p class="text-xs text-gold font-mono mb-3">PHP · MariaDB · Bootstrap</p>
@@ -303,7 +303,7 @@
             </div>
 
             <div class="reveal card-hover rounded-xl border border-white/10 bg-panel overflow-hidden">
-                <img src="images/portfolio/portfolio-16.png" alt="ERP Al-Rukan Technologies" class="w-full h-40 object-cover">
+                <img src="/images/portfolio/portfolio-4.png" alt="ERP Al-Rukan Technologies" class="w-full h-40 object-cover">
                 <div class="p-6">
                     <h3 class="font-display text-lg mb-1">ERP Al-Rukan Technologies</h3>
                     <p class="text-xs text-gold font-mono mb-3">PHP · MariaDB · Bootstrap</p>
