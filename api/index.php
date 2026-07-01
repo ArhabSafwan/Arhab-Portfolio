@@ -30,7 +30,7 @@
 
         <div class="reveal justify-self-center">
             <div class="frame-glow w-52 h-52 md:w-64 md:h-64 rounded-full">
-                <img src="images/about-photo.jpg" alt="SM. Arhab Safwan" class="w-52 h-52 md:w-64 md:h-64 object-cover rounded-full border-4 border-obsidian relative z-10">
+                <img src="/images/about-photo.jpg" alt="SM. Arhab Safwan" class="w-52 h-52 md:w-64 md:h-64 object-cover rounded-full border-4 border-obsidian relative z-10">
             </div>
         </div>
     </div>
