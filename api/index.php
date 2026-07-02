@@ -62,8 +62,8 @@
             <p class="text-[10px] text-slategray mt-2 font-mono uppercase tracking-widest">Years Exp.</p>
         </div>
         <div class="glass p-6 md:p-8 rounded-xl border border-white/5 card-hover">
-            <p class="font-mono text-3xl md:text-4xl text-offwhite metric-num font-bold">10<span class="text-primary">+</span></p>
-            <p class="text-[10px] text-slategray mt-2 font-mono uppercase tracking-widest">Enterprise Apps</p>
+            <p class="font-mono text-3xl md:text-4xl text-offwhite metric-num font-bold">8<span class="text-primary">+</span></p>
+            <p class="text-[10px] text-slategray mt-2 font-mono uppercase tracking-widest">Enterprise Platforms</p>
         </div>
         <div class="glass p-6 md:p-8 rounded-xl border border-white/5 card-hover">
             <p class="font-mono text-3xl md:text-4xl text-accent metric-num font-bold">~40%</p>
@@ -71,7 +71,7 @@
         </div>
         <div class="glass p-6 md:p-8 rounded-xl border border-white/5 card-hover">
             <p class="font-mono text-3xl md:text-4xl text-offwhite metric-num font-bold">3</p>
-            <p class="text-[10px] text-slategray mt-2 font-mono uppercase tracking-widest">Global Orgs</p>
+            <p class="text-[10px] text-slategray mt-2 font-mono uppercase tracking-widest">Global Organizations</p>
         </div>
     </div>
 </header>
