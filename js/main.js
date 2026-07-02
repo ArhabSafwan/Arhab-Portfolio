@@ -15,6 +15,4 @@ $(function () {
   }
   checkReveal();
   $(window).on('scroll resize', checkReveal);
-
-  // Smooth nav highlight not required; simple anchor scroll already via CSS scroll-behavior
 });

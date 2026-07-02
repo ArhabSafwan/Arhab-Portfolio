@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- Primary SEO Metadata -->
   <title>SM. Arhab Safwan — Senior Software Engineer | Enterprise & Fintech Architect</title>
-  <meta name="description" content="Portfolio of SM. Arhab Safwan, a Senior Software Engineer specializing in scalable full-stack applications, Laravel, Next.js, and fintech payment solutions for global organizations like BRAC, UNICEF, and Harvard.">
-  <meta name="keywords" content="Senior Software Engineer, Full Stack Developer, Laravel, Next.js, React, Fintech, Web Architect, Dhaka, Bangladesh, BRAC, UNICEF, Harvard">
+  <meta name="description"
+    content="Portfolio of SM. Arhab Safwan, a Senior Software Engineer specializing in scalable full-stack applications, Laravel, Next.js, and fintech payment solutions for global organizations like BRAC, UNICEF, and Harvard.">
+  <meta name="keywords"
+    content="Senior Software Engineer, Full Stack Developer, Laravel, Next.js, React, Fintech, Web Architect, Dhaka, Bangladesh, BRAC, UNICEF, Harvard">
   <meta name="author" content="SM. Arhab Safwan">
   <link rel="icon" type="image/png" href="/images/favicon/favicon-32x32.png" />
 
@@ -15,21 +18,26 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://arhab-portfolio.vercel.app/">
   <meta property="og:title" content="SM. Arhab Safwan — Senior Software Engineer">
-  <meta property="og:description" content="Architecting and scaling robust enterprise applications and fintech systems. Veteran in Laravel, Next.js, and AI-accelerated delivery.">
+  <meta property="og:description"
+    content="Architecting and scaling robust enterprise applications and fintech systems. Veteran in Laravel, Next.js, and AI-accelerated delivery.">
   <meta property="og:image" content="https://arhab-portfolio.vercel.app/images/about-photo.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://arhab-portfolio.vercel.app/">
   <meta property="twitter:title" content="SM. Arhab Safwan — Senior Software Engineer">
-  <meta property="twitter:description" content="Architecting and scaling robust enterprise applications and fintech systems. Veteran in Laravel, Next.js, and AI-accelerated delivery.">
+  <meta property="twitter:description"
+    content="Architecting and scaling robust enterprise applications and fintech systems. Veteran in Laravel, Next.js, and AI-accelerated delivery.">
   <meta property="twitter:image" content="https://arhab-portfolio.vercel.app/images/about-photo.jpg">
 
   <!-- Scripts & Fonts -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Swapped Fraunces for Space Grotesk to give a modern engineering vibe -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css?v=<?php echo time(); ?>">
 
   <script>
@@ -37,16 +45,17 @@
       theme: {
         extend: {
           colors: {
-            obsidian: '#0B0C10',
-            panel: '#131519',
-            panel2: '#181B21',
-            gold: '#C5A880',
-            goldbright: '#DCC08F',
-            offwhite: '#F8FAFC',
-            slategray: '#94A3B8',
+            // Dark IDE Theme
+            background: '#030712', // Very dark slate (gray-950)
+            surface: '#111827',    // Component bg (gray-900)
+            surface2: '#1f2937',   // Borders/Hover (gray-800)
+            primary: '#38bdf8',    // Electric Cyan (sky-400)
+            accent: '#34d399',     // Terminal Green (emerald-400)
+            offwhite: '#f8fafc',
+            slategray: '#94a3b8',
           },
           fontFamily: {
-            display: ['"Fraunces"', 'serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
             body: ['"Inter"', 'sans-serif'],
             mono: ['"JetBrains Mono"', 'monospace'],
           },
@@ -56,18 +65,23 @@
   </script>
 </head>
 
-<body class="bg-obsidian text-offwhite font-body antialiased">
+<body class="bg-background text-offwhite font-body antialiased">
 
-<!-- ================= NAV ================= -->
-<nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-obsidian/70 border-b border-white/5">
-  <div class="max-w-6xl mx-auto px-6 md:px-10 flex items-center justify-between h-16">
-    <a href="#top" class="font-display text-lg tracking-wide text-offwhite">S<span class="text-gold">.</span>A<span class="text-gold">.</span>S</a>
-    <div class="hidden md:flex items-center gap-8 text-sm text-slategray eyebrow text-[11px]">
-      <a href="#experience" class="nav-link hover:text-offwhite transition-colors">EXPERIENCE</a>
-      <a href="#skills" class="nav-link hover:text-offwhite transition-colors">SKILLS</a>
-      <a href="#projects" class="nav-link hover:text-offwhite transition-colors">PROJECTS</a>
-      <a href="#education" class="nav-link hover:text-offwhite transition-colors">EDUCATION</a>
+  <!-- ================= NAV ================= -->
+  <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/80 border-b border-surface2">
+    <div class="max-w-6xl mx-auto px-6 md:px-10 flex items-center justify-between h-16">
+      <a href="#top"
+        class="font-mono text-lg font-bold text-offwhite tracking-tight hover:text-primary transition-colors">
+        <span class="text-primary/60">&lt;</span>Arhab <span class="text-primary/60">/&gt;</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm text-slategray font-mono text-[12px]">
+        <a href="#experience" class="nav-link hover:text-offwhite transition-colors">~/experience</a>
+        <a href="#skills" class="nav-link hover:text-offwhite transition-colors">~/skills</a>
+        <a href="#projects" class="nav-link hover:text-offwhite transition-colors">~/projects</a>
+      </div>
+      <a href="#contact"
+        class="hidden md:inline-block text-xs font-mono border border-primary/50 text-primary px-4 py-2 rounded hover:bg-primary/10 transition-colors">
+        $ contact --init
+      </a>
     </div>
-    <a href="#contact" class="hidden md:inline-block text-xs eyebrow border border-gold/50 text-gold px-4 py-2 rounded-full hover:bg-gold hover:text-obsidian transition-colors">GET IN TOUCH</a>
-  </div>
-</nav>
+  </nav>
