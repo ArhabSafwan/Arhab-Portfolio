@@ -180,7 +180,7 @@
                 <p class="text-primary/80 text-sm mb-6 font-mono font-semibold">@ DEVTECHGURU LTD.</p>
                 <ul class="space-y-4 text-slategray text-[15px] leading-relaxed max-w-4xl">
                     <li class="flex items-start gap-3"><span class="text-primary mt-1">▹</span>
-                        <p>Engineered scalable software architecture for client systems including BRAC Frugal Innovation Forum and Brac Otithi.</p>
+                        <p>Engineered scalable software architecture for client systems.</p>
                     </li>
                     <li class="flex items-start gap-3"><span class="text-primary mt-1">▹</span>
                         <p>Optimized MySQL database schemas for data integrity, improving response times by <span class="text-offwhite font-medium">~90%</span>.</p>
@@ -189,7 +189,7 @@
                         <p>Implemented CI/CD pipelines (GitHub Actions, Docker) for automated testing and deployment.</p>
                     </li>
                     <li class="flex items-start gap-3"><span class="text-primary mt-1">▹</span>
-                        <p>Delivered full-stack features for international clients (UNICEF, Asian University for Women, Harvard's Wyss Institute).</p>
+                        <p>Delivered full-stack features for international clients.</p>
                     </li>
                 </ul>
             </div>
@@ -277,21 +277,21 @@
 
             <div class="reveal glass rounded-2xl border border-white/5 overflow-hidden card-hover group">
                 <div class="relative h-48 overflow-hidden">
-                    <img src="/images/portfolio/portfolio-17.png" alt="AUW" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <img src="/images/portfolio/portfolio-16.png" alt="BRAC Otithi" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                 </div>
                 <div class="p-6">
-                    <h3 class="font-display font-bold text-lg mb-1 text-offwhite">AUW Laboratory School</h3>
+                    <h3 class="font-display font-bold text-lg mb-1 text-offwhite">BRAC Otithi E-Commerce</h3>
                     <p class="text-[10px] text-primary font-mono mb-3 uppercase">Laravel / Tailwind / MySQL</p>
-                    <p class="text-sm text-slategray leading-relaxed">School CMS website featuring a robust admin panel for dynamic content management.</p>
+                    <p class="text-sm text-slategray leading-relaxed">Tour booking platform supporting multiple packages with Cybersource and PortPOS payment gateways.</p>
                 </div>
             </div>
 
             <div class="reveal glass rounded-2xl border border-white/5 overflow-hidden card-hover group">
                 <div class="relative h-48 overflow-hidden">
-                    <img src="/images/portfolio/portfolio-15.png" alt="Brac Frugal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <img src="/images/portfolio/portfolio-15.png" alt="BRAC Frugal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                 </div>
                 <div class="p-6">
-                    <h3 class="font-display font-bold text-lg mb-1 text-offwhite">Brac Frugal Innovation Forum</h3>
+                    <h3 class="font-display font-bold text-lg mb-1 text-offwhite">BRAC Frugal Innovation Forum</h3>
                     <p class="text-[10px] text-primary font-mono mb-3 uppercase">Laravel / Tailwind / MySQL</p>
                     <p class="text-sm text-slategray leading-relaxed">Annual innovation event platform with speaker registration and integrated PortPOS payment system.</p>
                 </div>
@@ -299,10 +299,10 @@
 
             <div class="reveal glass rounded-2xl border border-white/5 overflow-hidden card-hover group">
                 <div class="relative h-48 overflow-hidden">
-                    <img src="/images/portfolio/brac_inno.png" alt="Brac Social" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <img src="/images/portfolio/BRAC_inno.png" alt="BRAC Social" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                 </div>
                 <div class="p-6">
-                    <h3 class="font-display font-bold text-lg mb-1 text-offwhite">Brac Social Innovation Lab</h3>
+                    <h3 class="font-display font-bold text-lg mb-1 text-offwhite">BRAC Social Innovation Lab</h3>
                     <p class="text-[10px] text-primary font-mono mb-3 uppercase">PHP / Tailwind / Bootstrap</p>
                     <p class="text-sm text-slategray leading-relaxed">Platform for showcasing BRAC's social innovation initiatives and new ideas for social welfare.</p>
                 </div>
@@ -310,12 +310,12 @@
 
             <div class="reveal glass rounded-2xl border border-white/5 overflow-hidden card-hover group">
                 <div class="relative h-48 overflow-hidden">
-                    <img src="/images/portfolio/portfolio-16.png" alt="Brac Otithi" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <img src="/images/portfolio/portfolio-17.png" alt="AUW" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                 </div>
                 <div class="p-6">
-                    <h3 class="font-display font-bold text-lg mb-1 text-offwhite">Brac Otithi E-Commerce</h3>
+                    <h3 class="font-display font-bold text-lg mb-1 text-offwhite">AUW Laboratory School</h3>
                     <p class="text-[10px] text-primary font-mono mb-3 uppercase">Laravel / Tailwind / MySQL</p>
-                    <p class="text-sm text-slategray leading-relaxed">Tour booking platform supporting multiple packages with Cybersource and PortPOS payment gateways.</p>
+                    <p class="text-sm text-slategray leading-relaxed">School CMS website featuring a robust admin panel for dynamic content management.</p>
                 </div>
             </div>
 

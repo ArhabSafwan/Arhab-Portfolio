@@ -11,6 +11,10 @@
             "dest": "/$1/$2"
         },
         {
+            "src": "/robots.txt",
+            "dest": "/robots.txt"
+        },
+        {
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
